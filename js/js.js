@@ -155,6 +155,7 @@ $(function(){
         .toggleClass("active");
     })
 
+    //2023-02-17 新增請稍等 投注成功彈窗
     $(".right .betBlock .betContent .betTotal .okBtn").click(function(){
         $(".jumpWindow")
         .removeClass("display");
@@ -287,6 +288,7 @@ $(function(){
         .addClass("display");
     })
 
+    //2023-02-17 修改classname
     $(".calldate").click(function(){
         $(".jumpWindow")
         .removeClass("display");
