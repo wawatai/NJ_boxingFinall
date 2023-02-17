@@ -154,6 +154,31 @@ $(function(){
         $(this)
         .toggleClass("active");
     })
+
+    $(".right .betBlock .betContent .betTotal .okBtn").click(function(){
+        $(".jumpWindow")
+        .removeClass("display");
+
+        $(".right")
+        .removeClass("active");
+
+        $(".mainArea .gameContent .content .gBlock .down .pkTeam .betBtnLine button")
+        .removeClass("active");
+
+        $("body .filter")
+        .addClass("display");
+
+        $(".filter .jumpWindow.plzWait")
+        .addClass("display");
+
+        setTimeout(function(){
+            $(".filter .jumpWindow.plzWait")
+            .removeClass("display");
+
+            $(".filter .jumpWindow.betState")
+            .addClass("display");
+        },1500);
+    })
 })
 
 //betPage

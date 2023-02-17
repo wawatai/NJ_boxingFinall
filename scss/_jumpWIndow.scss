@@ -28,6 +28,46 @@
             display: block;
         }
 
+        //投注中請稍等
+        &.plzWait {
+
+            .content {
+                display: flex;
+                flex-direction: column;
+
+                p {
+                    color: $mainColor_1;
+                    font-size: 0.975rem;
+                    text-align: center;
+                    margin: auto;
+                }
+            }
+        }
+
+        //投注狀態(成功/失敗)
+        &.betState {
+
+            .content {
+                display: flex;
+                flex-direction: column;
+
+                p {
+                    color: $mainColor_1;
+                    font-size: 0.975rem;
+                    text-align: center;
+                    margin: auto;
+                }
+
+                 .closeWindow {
+                    width: 30%;
+                    height: auto;
+                    @include btnStyle_1;
+                    padding: 10px 0;
+                    margin: 0 auto 20px;
+                }
+            }
+        }
+
         //撤銷投注
         &.cancelBet {
 

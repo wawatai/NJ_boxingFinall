@@ -1494,6 +1494,9 @@ html body .innerBox.mailPage .messageBox li {
   padding: 20px;
   margin-bottom: 15px;
 }
+html body .innerBox.mailPage .messageBox li:first-child {
+  margin-top: 20px;
+}
 html body .innerBox.mailPage .messageBox li:last-child {
   margin: 0;
 }
@@ -1600,7 +1603,7 @@ html body .innerBox.mailPage .messageCnt .date button:before {
 html body .innerBox .topLine {
   width: 100%;
   height: auto;
-  border-bottom: 3px solid none;
+  border-bottom: 3px solid #b1b1b1;
   position: relative;
   padding-bottom: 10px;
 }
@@ -1672,6 +1675,61 @@ html body .filter .jumpWindow {
 }
 html body .filter .jumpWindow.display {
   display: block;
+}
+html body .filter .jumpWindow.plzWait .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+html body .filter .jumpWindow.plzWait .content p {
+  color: #ffffff;
+  font-size: 0.975rem;
+  text-align: center;
+  margin: auto;
+}
+html body .filter .jumpWindow.betState .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+html body .filter .jumpWindow.betState .content p {
+  color: #ffffff;
+  font-size: 0.975rem;
+  text-align: center;
+  margin: auto;
+}
+html body .filter .jumpWindow.betState .content .closeWindow {
+  width: 30%;
+  height: auto;
+  background: #dd2830;
+  border-radius: 50px;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  padding: 10px 0;
+  margin: 0 auto 20px;
+}
+html body .filter .jumpWindow.betState .content .closeWindow:hover, html body .filter .jumpWindow.betState .content .closeWindow:active, html body .filter .jumpWindow.betState .content .closeWindow.active {
+  background: #b8151b;
 }
 html body .filter .jumpWindow.cancelBet .content table {
   width: 100%;
@@ -2479,9 +2537,7 @@ html body .center .mainArea .gameContent .content .gBlock .betwin p {
 html body .center .mainArea .gameContent .content .gBlock .betamount {
   width: 100%;
   height: auto;
-  border-bottom: 1px solid #851316;
   position: relative;
-  padding-bottom: 15px;
   margin-bottom: 10px;
 }
 html body .center .mainArea .gameContent .content .gBlock .betamount p {
@@ -2933,9 +2989,7 @@ html body .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdC
 html body .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .betamount {
   width: 100%;
   height: auto;
-  border-bottom: 1px solid #851316;
   position: relative;
-  padding-bottom: 15px;
   margin-bottom: 10px;
 }
 html body .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .betamount p {
