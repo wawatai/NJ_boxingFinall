@@ -53,6 +53,12 @@ header {
                         background-position-y: 100%;
                     }
                 }
+
+                &.message,
+                &.rule,
+                &.setting {
+                    display: none;
+                }
     
                 a {
                     width: auto;
@@ -242,6 +248,7 @@ header {
                     cursor: default;
                     user-select: none;
                     margin-top: 5px;
+                    white-space: nowrap;
                 }
             }
         }

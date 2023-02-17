@@ -115,8 +115,8 @@ $(function(){
     })
 
     //gBlock 投注
-    $(".mainArea .pkTeam .team button").click(function(){
-        $(".mainArea .pkTeam .team button")
+    $(".mainArea .pkTeam .betBtnLine button").click(function(){
+        $(".mainArea .pkTeam .betBtnLine button")
         .removeClass("active");
 
         $(this)
@@ -146,7 +146,7 @@ $(function(){
         $(".center .right .betTypeList li")
         .removeClass("active");
 
-        $(".mainArea .pkTeam .team button")
+        $(".mainArea .pkTeam .betBtnLine button")
         .removeClass("active");
     })
 

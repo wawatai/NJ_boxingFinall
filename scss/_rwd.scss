@@ -29,7 +29,7 @@
 
                         &>li {
 
-                            &:last-child {
+                            &:nth-of-type(4) {
                                 display: none;
                             }
                         }
@@ -175,7 +175,10 @@
                         li {
 
                             &:nth-of-type(3),
-                            &:nth-of-type(4){
+                            &:nth-of-type(4),
+                            &.message,
+                            &.rule,
+                            &.setting{
                                 display: block;
                             }
                             
@@ -327,6 +330,12 @@
                         bottom: 0;
 
                         li {
+
+                            &.message,
+                            &.rule,
+                            &.setting{
+                                display: none;
+                            }
 
                             a {
 
@@ -675,10 +684,6 @@
 
                         .itemBox {
                             height: auto;
-
-                            p {
-                                font-size: 0.875rem;
-                            }
                         }
                     }
                 }
@@ -788,6 +793,7 @@
                 padding-top: 50px;
 
                 .center {
+                    display: block;
 
                     //左移除
                     .left,

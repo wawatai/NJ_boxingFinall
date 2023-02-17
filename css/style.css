@@ -202,6 +202,9 @@ html body header .top ul li:hover p, html body header .top ul li:active p, html 
 html body header .top ul li:hover i, html body header .top ul li:active i, html body header .top ul li.active i {
   background-position-y: 100%;
 }
+html body header .top ul li.message, html body header .top ul li.rule, html body header .top ul li.setting {
+  display: none;
+}
 html body header .top ul li a {
   width: auto;
   height: auto;
@@ -439,6 +442,7 @@ html body header .top .rwd_TOPNav .itemBox p {
       -ms-user-select: none;
           user-select: none;
   margin-top: 5px;
+  white-space: nowrap;
 }
 html body header .top .langBox {
   width: auto;
@@ -1596,7 +1600,7 @@ html body .innerBox.mailPage .messageCnt .date button:before {
 html body .innerBox .topLine {
   width: 100%;
   height: auto;
-  border-bottom: 3px solid #b1b1b1;
+  border-bottom: 3px solid none;
   position: relative;
   padding-bottom: 10px;
 }
@@ -2409,17 +2413,6 @@ html body .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox 
   text-align: center;
   margin-bottom: 30px;
 }
-html body .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox .team button {
-  width: 100%;
-  background: #dd2830;
-  color: #ffffff;
-  font-weight: bold;
-  border-radius: 3px;
-  padding: 5px 0 6px;
-}
-html body .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox .team button:hover, html body .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox .team button:active, html body .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox .team button.active {
-  background: #851316;
-}
 html body .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox .VS {
   color: #ffffff;
   font-size: 1rem;
@@ -2427,6 +2420,31 @@ html body .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox 
   margin: 0 10px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+}
+html body .center .mainArea .gameContent .content .gBlock .down .pkTeam .betBtnLine {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html body .center .mainArea .gameContent .content .gBlock .down .pkTeam .betBtnLine button {
+  width: 90%;
+  background: #dd2830;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 3px;
+  padding: 5px 0 6px;
+  margin: 0 5px;
+}
+html body .center .mainArea .gameContent .content .gBlock .down .pkTeam .betBtnLine button:hover, html body .center .mainArea .gameContent .content .gBlock .down .pkTeam .betBtnLine button:active, html body .center .mainArea .gameContent .content .gBlock .down .pkTeam .betBtnLine button.active {
+  background: #851316;
 }
 html body .center .mainArea .gameContent .content .gBlock .down .pkTeam .winRWD {
   display: none;
@@ -2849,17 +2867,6 @@ html body .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdC
   text-align: center;
   margin-bottom: 30px;
 }
-html body .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .down .pkTeam .outbox .team button {
-  width: 100%;
-  background: #dd2830;
-  color: #ffffff;
-  font-weight: bold;
-  border-radius: 3px;
-  padding: 5px 0 6px;
-}
-html body .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .down .pkTeam .outbox .team button:hover, html body .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .down .pkTeam .outbox .team button:active, html body .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .down .pkTeam .outbox .team button.active {
-  background: #851316;
-}
 html body .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .down .pkTeam .outbox .VS {
   color: #ffffff;
   font-size: 1rem;
@@ -2867,6 +2874,31 @@ html body .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdC
   margin: 0 10px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+}
+html body .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .down .pkTeam .betBtnLine {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html body .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .down .pkTeam .betBtnLine button {
+  width: 90%;
+  background: #dd2830;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 3px;
+  padding: 5px 0 6px;
+  margin: 0 5px;
+}
+html body .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .down .pkTeam .betBtnLine button:hover, html body .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .down .pkTeam .betBtnLine button:active, html body .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .down .pkTeam .betBtnLine button.active {
+  background: #851316;
 }
 html body .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .down .pkTeam .winRWD {
   display: none;
@@ -3385,7 +3417,7 @@ html body footer .mobileFooter li:active a p, html body footer .mobileFooter li.
   html body header .top > ul {
     left: 40%;
   }
-  html body header .top > ul > li:last-child {
+  html body header .top > ul > li:nth-of-type(4) {
     display: none;
   }
   html body header .top .mem_Area {
@@ -3449,7 +3481,7 @@ html body footer .mobileFooter li:active a p, html body footer .mobileFooter li.
             transform: translateX(0);
     top: 70px;
   }
-  html body header .top ul li:nth-of-type(3), html body header .top ul li:nth-of-type(4) {
+  html body header .top ul li:nth-of-type(3), html body header .top ul li:nth-of-type(4), html body header .top ul li.message, html body header .top ul li.rule, html body header .top ul li.setting {
     display: block;
   }
   html body header .top ul li a i {
@@ -3539,6 +3571,9 @@ html body footer .mobileFooter li:active a p, html body footer .mobileFooter li.
   html body header .top ul {
     top: unset;
     bottom: 0;
+  }
+  html body header .top ul li.message, html body header .top ul li.rule, html body header .top ul li.setting {
+    display: none;
   }
   html body header .top ul li a p {
     font-size: 1.2rem;
@@ -3728,9 +3763,6 @@ html body footer .bottom {
   html body header .top .rwd_TOPNav .itemBox {
     height: auto;
   }
-  html body header .top .rwd_TOPNav .itemBox p {
-    font-size: 0.875rem;
-  }
   html body main .center .mainArea.index .gameContent .content {
     -ms-grid-columns: (1fr)[1];
     grid-template-columns: repeat(1, 1fr);
@@ -3801,6 +3833,9 @@ html body footer .bottom {
   }
   html body main {
     padding-top: 50px;
+  }
+  html body main .center {
+    display: block;
   }
   html body main .center .left,
 html body main .center .leftSide {

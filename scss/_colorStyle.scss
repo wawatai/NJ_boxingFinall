@@ -227,19 +227,6 @@ $header_button_ActiveBG: #FF9B9F;
                         text-align: center;
                         margin-bottom: 30px;
                     }
-
-                    button {
-                        width: 100%;
-                        background: #dd2830;
-                        color: #ffffff;
-                        font-weight: bold;
-                        border-radius: 3px;
-                        padding: 5px 0 6px;
-
-                        &:hover,&:active,&.active {
-                            background: #851316;
-                        }
-                    }
                 }
 
                 .VS {
@@ -248,6 +235,28 @@ $header_button_ActiveBG: #FF9B9F;
                     font-weight: bold;
                     margin: 0 10px;
                     flex-shrink: 0;
+                }
+            }
+
+            .betBtnLine {
+                width: 100%;
+                height: auto;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                
+                button {
+                    width: 90%;
+                    background: #dd2830;
+                    color: #ffffff;
+                    font-weight: bold;
+                    border-radius: 3px;
+                    padding: 5px 0 6px;
+                    margin: 0 5px;
+
+                    &:hover,&:active,&.active {
+                        background: #851316;
+                    }
                 }
             }
 
