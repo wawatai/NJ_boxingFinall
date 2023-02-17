@@ -1,0 +1,614 @@
+.center {
+    max-width: 1200px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+
+    //左
+    .left {
+        width: 250px;
+        height: auto;
+        transition: all 0.3s;
+        overflow: hidden;
+        flex-shrink: 0;
+
+        .navTitle {
+            color: $mainColor_2;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-bottom: 2px solid $mainBorder_1;
+            padding: 10px 0;
+        }
+
+        ul {
+            width: 100%;
+            height: auto;
+
+            li {
+                width: 100%;
+                height: 50px;
+                border-bottom: 1px solid $mainBorder_2;
+                overflow: hidden;
+
+                &:hover,&:active,&.active {
+                        
+                    a {
+                        transform: translateX(-34px);
+
+                        svg {
+                            fill: $subColor_2;
+                        }
+
+                        p {
+                            color: $mainColor_2;
+                        }
+                    }
+                }
+
+                a {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    transition: 0.3s all;
+                    padding: 0 10px;
+
+                    svg {
+                        width: 24px;
+                        height: 24px;
+                        fill: $mainColor_2;
+                        margin-right: 10px;
+                    }
+
+                    p {
+                        color: $mainColor_1;
+                        font-size: 1rem;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+
+    //內頁左
+    .leftSide {
+        width: 250px;
+        height: auto;
+        transition: all 0.3s;
+        flex-shrink: 0;
+
+        ul {
+            width: 100%;
+            height: auto;
+            background: $mainBG_2;
+            margin-top: 20px;
+
+            li {
+                width: 100%;
+                height: 50px;
+                border: 1px solid transparent;
+                overflow: hidden;
+
+                &:hover,&:active,&.active {
+                    background: $BG;
+                    border-color: $mainBorder_1;
+                        
+                    a {
+                        transform: translateX(20px);
+
+                        p {
+                            color: $mainColor_2;
+                        }
+                    }
+                }
+
+                a {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    transition: 0.3s all;
+                    padding: 0 10px;
+
+                    p {
+                        color: $mainColor_1;
+                        font-size: 1rem;
+                        font-weight: bold;
+                    }
+
+                    i {
+                        color: $mainColor_1;
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+
+    //中
+    .mainArea {
+        width: 100%;
+        height: auto;
+        padding: 20px 30px;
+        overflow: hidden;
+
+        .swiper {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+
+            .swiper-wrapper {
+                width: 100%;
+                height: auto;
+
+                .swiper-slide {
+
+                    .banner {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .swiper-button-prev,
+            .swiper-button-next {
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                top: 20px;
+                left: unset;
+                right: unset;
+                margin: 0;
+
+                &::before,
+                &::after {
+                    content: "";
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50px;
+                    border: 2px solid $mainColor_1;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                }
+
+                i {
+                    color: $mainColor_1;
+                    font-size: 20px;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%,-50%);
+                }
+            }
+
+            .swiper-button-prev {
+                right: 80px;
+            }
+            .swiper-button-next {
+                right: 30px;
+            }
+        }
+
+        .swiper02 {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            padding: 20px 0;
+
+            .swiper-wrapper {
+                width: 100%;
+                height: auto;
+
+                .swiper-slide {
+                    width: 20% !important;
+
+                    .gameTypeBox {
+                        width: 100%;
+                        height: auto;
+                        border: 3px solid $mainBorder_1;
+                        border-radius: 8px;
+                        padding: 0px 10px 10px;
+                        cursor: pointer;
+        
+                        &:hover,&:active,&.active {
+                            background: $subBG_3;
+
+                            p {
+                                color: $mainColor_1;
+                            }
+
+                            .picBox {
+
+                                svg {
+                                    fill: $mainColor_1;
+                                }
+                            }
+                        }
+        
+                        .picBox {
+                            width: 100%;
+                            height: 85px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin: 0 0 5px;
+        
+                            svg {
+                                width: 24px;
+                                height: 24px;
+                                fill: $mainColor_2;
+                                transform: scale(2.5);
+                            }
+                        }
+        
+                        p {
+                            color: $mainColor_2;
+                            font-size: 1rem;
+                            font-weight: bold;
+                            text-align: center;
+                            @include textHide;
+                        }
+                    }
+                }
+            }
+
+            .swiper-button-prev02,
+            .swiper-button-next02 {
+                width: 40px;
+                height: 40px;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                cursor: pointer;
+                z-index: 10;
+
+                &::before {
+                    content: "";
+                    width: 100%;
+                    height: 100%;
+                    background: $mainBG_2;
+                    border-radius: 5px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+
+                i {
+                    color: $mainColor_1;
+                    font-size: 1rem;
+                    position: absolute;
+                    top: 50%;
+                    transform: translate(-50%,-50%);
+                    left: 50%;
+                }
+            }
+            .swiper-button-prev02 {
+                left: 0;
+            }
+            .swiper-button-next02 {
+                right: 0;
+            }
+        }
+
+        .gameContent {
+            width: 100%;
+            height: auto;
+            padding: 20px 0 0;
+
+            .gTypeTitle {
+                width: 100%;
+                border-bottom: solid 3px $mainBorder_1;
+                color: $mainColor_2;
+                font-size: 1.5rem;
+                font-weight: bold;
+                padding-bottom: 10px;
+            }
+
+            .content {
+                width: 100%;
+                height: auto;
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                gap: 20px;
+                padding: 20px 0;
+
+                .gBlock {
+                    width: 100%;
+                    height: auto;
+                    @include gBlock;
+                }
+            }
+        }
+    }
+
+    //右
+    .right {
+        width: 300px;
+        height: auto;
+        overflow: hidden;
+        margin-top: 20px;
+        flex-shrink: 0;
+
+        .betBlock {
+            width: 100%;
+            height: auto;
+            background: $mainBG_2;
+            border-radius: 10px;
+            position: relative;
+
+            .topList {
+                width: 100%;
+                height: 40px;
+                overflow-x: auto;
+                display: flex;
+
+                &::-webkit-scrollbar {
+                    height: 0;
+                }
+
+                li {
+                    width: auto;
+                    height: 100%;
+                    border-bottom: solid 2px transparent;
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    padding: 0 10px;
+
+                    &:hover,&:active,&.active {
+                        border-color: $mainBorder_1;
+
+                        p {
+                            color: $mainColor_2;
+                        }
+                    }
+                    
+                    p {
+                        color: $subColor_1;
+                        font-size: 0.975rem;
+                        font-weight: bold;
+                        @include textHide;
+                    }
+                }
+            }
+
+            .betTypeList {
+                width: 100%;
+                height: auto;
+                background: $subBG_2;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                li {
+                    width: auto;
+                    height: 40px;
+                    border-bottom: solid 2px transparent;
+
+                    &:hover,&:active,&.active {
+                        border-color: $mainBorder_1;
+
+                        a {
+                            
+                            p {
+                                color: $mainColor_2;
+                            }
+                        }
+                    }
+
+                    a {
+                        width: auto;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        padding: 0 10px;
+
+                        p {
+                            color: $subColor_1;
+                            font-size: 0.85rem;
+                            font-weight: bold;
+                            @include textHide;
+                        }
+                    }
+                }
+            }
+
+            .betContent {
+                width: 100%;
+                height: auto;
+                min-height: 275px;
+                
+                .noData {
+                    display: none;
+                    width: 100%;
+                    height: auto;
+
+                    &.display {
+                        display: block;
+                    }
+
+                    p {
+                        color: $mainColor_1;
+                        font-size: 1rem;
+                        font-weight: bold;
+                        text-align: center;
+                        margin: 30px 0;
+                    }
+                }
+
+                .betData {
+                    display: none;
+                    width: 100%;
+                    height: auto;
+
+                    &.display {
+                        display: block;
+                    }
+
+                    .bdOuter {
+                        width: 100%;
+                        height: auto;
+                        padding: 15px 10px;
+                        
+                        // 投注注單
+                        .betDetail {
+                            width: 100%;
+                            height: auto;
+
+                            .bdTitle {
+                                width: 100%;
+                                background: $subBG_2;
+                                border-radius: 5px;
+                                display: flex;
+                                align-items: center;
+                                position: relative;
+                                padding: 5px;
+                                margin-bottom: 15px;
+
+                                svg {
+                                    width: 24px;
+                                    height: 24px;
+                                    fill: $subColor_1;
+                                }
+
+                                p {
+                                    color: $subColor_1;
+                                    font-size: 0.975rem;
+                                    font-weight: bold;
+                                    white-space: nowrap;
+                                    position: absolute;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                }
+                            }
+
+                            .bdContent {
+                                width: 100%;
+                                height: auto;
+                                @include gBlock;
+                                background: $BG;
+                                border: solid 1px $mainBorder_1;
+                                border-radius: 5px;
+                                padding: 0 10px 10px;
+
+                                .down {
+                                    border: none;
+                                    padding: 0;
+
+                                    .pkTeam {
+                                        border-radius: 5px;
+                                        margin: 0;
+
+                                        .outbox {
+
+                                            .team {
+
+                                                &.win {
+
+                                                    svg {
+                                                        opacity: 1;
+                                                    }
+                                                }
+
+                                                svg {
+                                                    opacity: 0.2;
+                                                }
+
+                                                .teamName {
+                                                    margin: 0;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    .winner {
+                                        text-align: left;
+                                        margin: 10px 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .betTotal {
+                        width: 100%;
+                        height: auto;
+
+                        li {
+                            width: 100%;
+                            height: auto;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            padding: 10px;
+
+                            &:last-child {
+                                padding: 10px 10px 20px;
+                            }
+
+                            p {
+                                color: $mainColor_2;
+                                font-size: 1rem;
+                                font-weight: bold;
+                                flex-shrink: 0;
+                            }
+
+                            span {
+                                color: $mainColor_1;
+                                font-size: 1rem;
+                                @include textHide;
+                            }
+
+                            .changeBtn {
+                                width: 60px;
+                                height: 30px;
+                                @include rowBtn;
+
+                                span {
+                                    width: 25px;
+                                    height: 25px;
+                                }
+                            }
+
+                            .okBtn {
+                                    width: auto;
+                                    height: auto;
+                                    @include btnStyle_1;
+                                    background: $subBG_3;
+                                    padding: 4px 15px 5px;
+                                    margin: 0 auto;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .closeRight {
+                display: none;
+                width: 100%;
+                height: 50px;
+                background: $mainBG_1;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+
+                p {
+                    color: $mainColor_1;
+                    font-size: 1rem;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+    

@@ -1,0 +1,237 @@
+footer {
+    width: 100%;
+    height: auto;
+    background: $mainBG_2;
+
+    //上
+    .top {
+        width: 100%;
+        height: auto;
+
+        .infoLine {
+            width: 100%;
+            height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            .lang {
+                width: auto;
+                position: absolute;
+                left: 20%;
+                display: flex;
+                align-items: center;
+
+                .langTitle {
+                    color: $mainColor_1;
+                    font-size: 1rem;
+                    margin-right: 20px;
+                    white-space: nowrap;
+                }
+
+                .flag {
+                    width: 24px;
+                    height: 24px;
+                    cursor: pointer;
+                }
+
+                ul {
+                    width: 220px;
+                    height: auto;
+                    @include bottomList;
+                    position: absolute;
+                    top: 35px;
+                    left: -138px;
+
+                    .innerTitle {
+                        color: $mainColor_2;
+                        font-size: 0.875rem;
+                        font-weight: bold;
+                        margin-bottom: 20px;
+                    }
+
+                    li {
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        align-items: center;
+                        cursor: pointer;
+                        padding: 0 5px;
+                        margin-bottom: 10px;
+
+                        &:last-child {
+                            margin: 0;
+                        }
+
+                        .flag {
+                            margin-right: 10px;
+                        }
+
+                        label {
+                            width: 10px;
+                            height: 10px;
+                            @include checkboxStyle_1;
+                            margin-right: 10px;
+
+                            input {
+                                width: 100%;
+                                height: 100%;
+                                pointer-events: none;
+                                opacity: 0;
+                                margin: 0;
+                            }
+                        }
+
+                        p {
+                            color: $subColor_2;
+                            font-size: 0.75rem;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+
+            .payway {
+                color: $subColor_2;
+                font-size: 1rem;
+                font-weight: bold;
+
+                span {
+                    margin: 0 5px;
+                }
+            }
+
+            .betRate {
+                display: none;
+                width: auto;
+                align-items: center;
+
+                p {
+                    color: $subColor_2;
+                    font-size: 1rem;
+                    margin-right: 10px;
+                    white-space: nowrap;
+                }
+
+                select {
+                    width: auto;
+                    background: none;
+                    color: $subColor_2;
+                    font-size: 1rem;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .company {
+            width: 100%;
+            height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            
+            .logo {
+                height: 69px;
+                object-fit: contain;
+                margin-right: 20px;
+            }
+
+            .coDetail {
+                max-width: 670px;
+                color: $subColor_1;
+                font-size: 1rem;
+                line-height: 1.5rem;
+            }
+        }
+    }
+
+    //下
+    .bottom {
+        width: 100%;
+        height: auto;
+        background: $mainBG_1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0;
+        
+        p {
+            color: $mainColor_1;
+            font-size: 0.875rem;
+            font-weight: bold;
+            
+            &:last-child {
+                margin-top: 10px;
+            }
+        }
+    }
+
+    // 手機版
+    .mobileFooter {
+        display: none;
+        width: 100%;
+        height: auto;
+        background: $subBG_4;
+
+        li {
+            width: 25%;
+            height: auto;
+
+            a {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 2vw 0;
+                
+                i {
+                    width: 7vw;
+                    height: 7vw;
+
+                    &.home {
+                        background-position-x: 25%;
+                    }
+                    &.winlose {
+                        background-position-x: 50%;
+                        transform: scale(1.5);
+                    }
+                    &.bet {
+                        background-position-x: 75%;
+                    }
+                    &.member {
+                        background-position-x: 100%;
+                    }
+                }
+
+                p {
+                    color: $header_topList_Color;
+                    font-size: 0.875rem;
+                    font-weight: bold;
+                    margin-top: 1vw;
+                }
+            }
+
+            &:active,
+            &.active {
+
+                a {
+                    background: $mainBG_1;
+                    
+                    i {
+                        background-position-y: 100%;
+                    }
+
+                    p {
+                        color: $mainColor_1;
+                    }
+                }
+            }
+        }
+    }
+}

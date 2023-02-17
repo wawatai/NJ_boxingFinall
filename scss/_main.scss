@@ -1,0 +1,34 @@
+html {
+    width: 100%;
+    height: auto;
+    background: $BG;
+    -webkit-tap-highlight-color: rgba(0,0,0,0); 
+
+    body {
+        width: 100%;
+        height: auto;
+
+        main {
+            width: 100%;
+            height: auto;
+            padding-top: 125px;
+
+            &.innerPage {
+
+                .center {
+
+                    .left {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        @import "./header";
+        @import "./memberPage";
+        @import "./jumpWIndow";
+        @import "./mainWrap";
+        @import "./footer";
+    }
+}
+

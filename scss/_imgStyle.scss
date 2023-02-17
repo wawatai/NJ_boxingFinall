@@ -1,0 +1,35 @@
+//header
+header .top li i {
+    background: url('../image/icon/header_ic.png') no-repeat;
+    background-size: 500%;
+}
+
+//memberPage
+.userHome .userPic {
+    background: url(../image/user.png) no-repeat center;
+    background-size: 100%;
+}
+.userHome .topBox ul li a .userNav_IC {
+    background: url(../image/icon/mybigNav_IC.png) no-repeat;
+    background-size: 500%;
+}
+
+//message
+.mailPage .message_ic {
+    background: url('../image/icon/message_ic.png') no-repeat center;
+    background-size: contain;
+}
+
+//footer
+footer .flag.jp {
+    background: url("../image/icon/flag/JP.svg") no-repeat center;
+    background-size: contain;
+}
+footer .flag.uk {
+    background: url("../image/icon/flag/UK.svg") no-repeat center;
+    background-size: contain;
+}
+footer .mobileFooter li a i {
+    background: url('../image/icon/footer_ic.png') no-repeat;
+    background-size: 500%;
+}

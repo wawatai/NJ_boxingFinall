@@ -1,0 +1,1220 @@
+//rwd_1400 網頁用
+@media only screen and (max-width: 1400px) {
+    html {
+
+        body {
+
+            .filter {
+                
+                .jumpWindow {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+
+//rwd_1315 網頁用
+@media only screen and (max-width: 1315px) {
+    html {
+
+        body {
+
+            header {
+
+                .top {
+
+                    &>ul {
+                        left: 40%;
+
+                        &>li {
+
+                            &:last-child {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    .mem_Area {
+                        margin-left: 15px;
+        
+                        .checkBox {
+                            display: flex;
+                        }
+                    }
+                }
+
+                .bottom {
+                    padding: 0 20px;
+
+                    .mid {
+                        width: auto;
+                    }
+                }
+            }
+
+            .filter {
+
+                .jumpWindow {
+
+                    &.chooseball {
+                        
+                        .content {
+                            grid-template-columns: repeat(3, 1fr);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//rwd_1200 網頁用
+@media only screen and (max-width: 1200px) {
+    html {
+
+        body {
+
+            header {
+
+                .top {
+
+                    ul {
+
+                        li {
+
+                            &:nth-of-type(3) {
+                                display: none;
+                            }
+                        }
+                    }
+        
+                    .mem_Area {
+        
+                        .checkBox {
+
+                            ul {
+
+                                li {
+
+                                    &:first-child {
+                                        display: block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            main {
+
+                &.innerPage {
+
+                    .leftSide {
+                        padding-left: 30px;
+                    }
+                }
+
+                .center {
+
+                    .mainArea {
+
+                        .gameContent {
+
+                            .content {
+                                grid-template-columns: repeat(1,1fr);
+                            }
+                        }
+                    }
+
+                    .right {
+                        margin-right: 30px;
+                    }
+                }
+            }
+
+            .filter {
+                
+                .jumpWindow {
+                    width: 60%;
+                }
+            }
+        }
+    }
+}
+
+//rwd_1024 網頁用
+@media only screen and (max-width: 1024px) {
+    html {
+
+        body {
+
+            header {
+
+                .top {
+                    padding: 0;
+                    position: relative;
+        
+                    .logo {
+                        position: absolute;
+                        top: 15px;
+                        left: 15px;
+        
+                        img {
+                            height: 40px;
+                            object-fit: contain;
+                        }
+                    }
+
+                    ul {
+                        left: 10px;
+                        transform: translateX(0);
+                        top: 70px;
+                        
+                        li {
+
+                            &:nth-of-type(3),
+                            &:nth-of-type(4){
+                                display: block;
+                            }
+                            
+                            a {
+                                
+                                i {
+                                    display: none;
+                                }
+
+                                p {
+                                    font-size: 0.8rem;
+                                }
+                            }
+                        }
+                    }
+        
+                    .rwd_TOPNav {
+                        display: block;
+                    }
+        
+                    .mem_Area {
+                        display: none;
+                    }
+                }
+
+                .bottom {
+                    display: none;
+                }
+            }
+
+            main {
+                padding-top: 90px;
+    
+                &.innerPage {
+    
+                    .center {
+    
+                        //內頁開啟.left
+                        .left {
+                            display: block;
+                        }
+
+                        .leftSide {
+                            display: none;
+                        }
+
+                        .mainArea {
+
+                            .innerBox {
+                                padding: 0 4vw 19vw;
+                            }
+                        }
+                    }
+                }
+    
+                .center {
+    
+                    //.left滑動效果
+                    .left {
+                        width: 0;
+                        height: 100%;
+                        position: fixed;
+                        top: 90px;
+                        left: 0;
+                        z-index: 150;
+        
+                        &.active {
+                            width: 100%;
+                            background: $filter;
+                        }
+            
+                        .navTitle {
+                            width: 250px;
+                            background: $BG;
+                            padding-left: 10px;
+                        }
+            
+                        ul {
+                            width: 250px;
+                            height: calc(100% - (1.2rem + 20px));
+                            background: $BG;
+                            overflow-y: auto;
+                            overscroll-behavior: none;
+            
+                            &::-webkit-scrollbar {
+                                width: 0;
+                            }
+                        }
+                    }
+                }
+            }
+
+            footer {
+
+                .top {
+
+                    .company {
+                        display: none;
+                    }
+                }
+
+                .bottom {
+                    height: 120px;
+                }
+            }
+
+            .filter {
+                
+                .jumpWindow {
+                    width: 70%;
+                }
+            }
+        }
+    }
+}
+
+//rwd_820 平板用
+@media only screen and (max-width: 820px) {
+    html {
+        
+        body {
+
+            header {
+
+                .top {
+
+                    .rwd_TOPNav {
+                        width: 12vw;
+                        height: 100%;
+
+                        .itemBox {
+                            width: 100%;
+                            height: 100%;
+                            justify-content: center;
+
+                            svg {
+                                width: 5vw;
+                                height: 5vw;
+                            }
+
+                            p {
+                                font-size: 1.2rem;
+                            }
+                        }
+                    }
+
+                    ul {
+                        top: unset;
+                        bottom: 0;
+
+                        li {
+
+                            a {
+
+                                p {
+                                    font-size: 1.2rem;
+                                    padding-bottom: 1vw;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            main {
+                padding-bottom: 12vw;
+
+                .center {
+
+                    .mainArea {
+                        //網頁版內縮移除
+                        padding: 0;
+
+                        //首頁內縮
+                        &.index {
+                            padding: 2vw 2vw 22vw;
+    
+                            //跑馬燈移除
+                            .swiper {
+                                display: none;
+                            }
+
+                            .gameContent {
+                                
+                                .content {
+                                    grid-template-columns: repeat(2,1fr);
+                                }
+                            }
+                        }
+
+                        .innerBox {
+
+                            &.userHome {
+
+                                .topBox {
+                                    margin-top: 4vw;
+
+                                    .userBox {
+                                        padding: 2vw 4vw;
+
+                                        .userPic {
+                                            width: 15vw;
+                                            height: 15vw;
+                                            margin-right: 4vw;
+                                        }
+
+                                        p {
+
+                                            span {
+                                                margin-top: 2vw;
+                                            }
+                                        }
+                                    }
+
+                                    ul {
+                                        display: flex
+                                    }
+                                }
+
+                                .pageList {
+                                    display: block;
+                                }
+                            }
+
+                            &.betPage {
+
+                                .betBox {
+
+                                    .topnav {
+                                        justify-content: space-between;
+                                        margin: 0;
+
+                                        li {
+                                            width: 20%;
+                                            padding: 0;
+
+                                            p {
+                                                font-size: 1rem;
+                                            }
+                                        }
+                                    }
+
+                                    .betData {
+
+                                        li {
+
+                                            table {
+
+                                                &:nth-of-type(1) {
+                                                    margin-top: 4vw;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .myResult {
+                                    display: flex;
+
+                                    div {
+
+                                        p {
+
+                                            span {
+                                                margin-top: 2vw;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            &.setting {
+
+                                form {
+
+                                    &>div {
+                                        padding: 4vw 0;
+
+                                        .bTitle {
+                                            margin-bottom: 2vw;
+                                        }
+                                            
+                                        &:nth-of-type(1) {
+                                            
+                                            &>div {
+
+                                                display: block;
+
+                                                p {
+                                                    margin-bottom: 2vw;
+                                                }
+
+                                                .inputBox {
+                                                    display: grid;
+                                                    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+                                                    gap: 2vw;
+
+                                                    input {
+                                                        width: auto;
+                                                        min-width: 0;
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        &:nth-of-type(2) {
+
+                                            &>div {
+                                                justify-content: flex-start;
+
+                                                p {
+
+                                                    &.state {
+                                                        margin-left: 4vw;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            &.mailPage {
+
+                                &.inner {
+
+                                    .messageCnt {
+
+                                        .date {
+
+                                            button {
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .topLine {
+                                padding: 4vw 0;
+
+                                button {
+                                    display: block;
+                                }
+
+                                .pageName {
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+
+                    //右樣式
+                    .right {
+                        width: 100%;
+                        height: 100%;
+                        position: fixed;
+                        left: 0;
+                        top: 0;
+                        transform: translateX(100%);
+                        transition: 0.3s all;
+                        margin: 0;
+                        z-index: 999;
+
+                        &.active {
+                            transform: translateX(0);
+                        }
+
+                        .betBlock {
+                            height: 100%;
+                            border-radius: 0;
+
+                            .topList {
+                                justify-content: space-between;
+                            }
+
+                            .betContent {
+                                max-height: calc(100% - 70px);
+                                overflow-y: overlay;
+                                padding-bottom: 70px;
+
+                                .betData {
+
+                                    .betTotal {
+
+                                        li {
+
+                                            .okBtn {
+                                                font-size: 1.1rem;
+                                                padding: 3.2vw 5vw;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .closeRight {
+                                display: flex;
+                            }
+                        }
+                    }
+                }
+            }
+
+            footer {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                z-index: 120;
+        
+                .top,
+                .bottom {
+                    display: none;
+                }
+        
+                .mobileFooter {
+                    display: flex;
+                }
+            }
+
+            .filter {
+                
+                .jumpWindow {
+                    width: 80%;
+
+                    &.cancelBet {
+
+                        .content {
+
+                            table {
+
+                                tr {
+
+                                    &:nth-of-type(4) {
+
+                                        td {
+
+                                            &:last-child {
+
+                                                p {
+
+                                                    span {
+
+                                                        &.vs {
+                                                            font-size: 0.75rem;
+                                                            margin: 0 2vw;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    td {
+
+                                        p {
+                                            font-size: 0.85rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &.chooseball {
+
+                        .content {
+                            padding: 3vw;
+                            gap: 1vw;
+
+                            button:not(.closeWindow) {
+                                font-size: 0.8rem;
+                            }
+                        }
+                    }
+
+                    .content {
+                        padding: 0 3vw 4vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//rwd_670 平板用
+@media only screen and (max-width: 670px) {
+    html {
+        
+        body {
+
+            header {
+
+                .top {
+
+                    .rwd_TOPNav {
+
+                        .itemBox {
+                            height: auto;
+
+                            p {
+                                font-size: 0.875rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            main {
+
+                .center {
+
+                    .mainArea {
+
+                        //首頁內縮
+                        &.index {
+
+                            .gameContent {
+                                
+                                .content {
+                                    grid-template-columns: repeat(1,1fr);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//rwd_500 網頁最小寬 + 手機用
+@media only screen and (max-width: 500px) {
+    html {
+        //rem繼承
+        font-size: 4vw;
+
+        body {
+
+            header {
+
+                .top {
+                    height: 50px;
+                    position: relative;
+                    padding: 0 20px;
+        
+                    .logo {
+                        position: static;
+                        order: 1;
+    
+                        img {
+                            height: 30px;
+                        }
+                    }
+                    
+                    ul {
+                        display: none;
+                    }
+        
+                    .rwd_TOPNav {
+                        display: none;
+                    }
+        
+                    .langBox {
+                        display: block;
+                    }
+
+                    .mem_Area {
+                        display: flex;
+                        order: 2;
+                        margin: 0;
+                        
+                        .checkBox {
+                            display: none;
+                        }
+
+                        div {
+
+                            &.account {
+                                order: 1;
+                                margin: 0;
+    
+                                i {
+                                    margin: 0;
+                                }
+            
+                                p {
+                                    display: none;
+                                }
+                            }
+                        }
+
+                        .wallet {
+                            order: 0;
+                            margin-right: 10px;
+                            
+                            .walletTitle {
+                                display: none;
+                            }
+                        }
+        
+                        .logoutBtn {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            main {
+                padding-top: 50px;
+
+                .center {
+
+                    //左移除
+                    .left,
+                    .leftSide {
+                        display: none;
+                    }
+
+                    .mainArea {
+
+                        //首頁內縮
+                        &.index {
+
+                            //調整首頁nav大小
+                            .middleNav {
+
+                                .topnav {
+                
+                                    li {
+                                        width: 25%;
+                                    }
+                                }
+                            }
+
+                            //調整中選項大小
+                            .swiper02 {
+                                padding: 4vw 0;
+
+                                .swiper-wrapper {
+
+                                    .swiper-slide {
+                                        width: auto !important;
+
+                                        .gameTypeBox {
+                                            padding: 0 3vw 3vw;
+
+                                            .picBox {
+                                                width: 16vw;
+                                                height: 16vw;
+
+                                                svg {
+                                                    transform: scale(1.5);
+                                                }
+                                            }
+
+                                            p {
+                                                max-width: 16vw;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            //首頁調整下選單樣式
+                            .gameContent {
+                                padding: 0;
+
+                                .content {
+                                    gap: 4vw 0;
+                                    padding: 4vw 0;
+
+                                    .gBlock {
+
+                                        .down {
+                                            display: flex;
+                                            padding: 2vw;
+
+                                            .infoDetail {
+                                                width: 100%;
+                                                order: 1;
+                                            }
+
+                                            .pkTeam {
+                                                width: 58%;
+                                                padding: 7vw 4vw 4vw;
+                                                margin-right: 4vw;
+                                                flex-shrink: 0;
+                                                order: 0;
+                                                margin: 0 2vw 0 0;
+
+                                                .outbox {
+
+                                                    .team {
+
+                                                        svg {
+                                                            transform: scale(1.5);
+                                                            margin: 0 0 5vw;
+                                                        }
+
+                                                        .teamName {
+                                                            font-size: 1rem;
+                                                            line-height: 1.5rem;
+                                                            margin-bottom: 4vw;
+                                                        }
+                                                    }
+                                                }
+
+                                                .winRWD {
+                                                    display: block;
+                                                }
+                                            }
+
+                                            .winner {
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        //內頁
+                        .innerBox {
+
+                            &.userHome {
+
+                                .topBox {
+
+                                    .userBox {
+
+                                        p {
+                                            font-size: 1.2rem;
+                                            
+                                            span {
+                                                font-size: 1rem;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            &.betPage {
+
+                                .selectNav {
+                                    margin: 4vw 0;
+    
+                                    div:not(.selectBox) {
+                                        padding: 2vw 3vw 2.5vw;
+                                        margin-right: 2vw;
+                                    }
+    
+                                    .selectBox {
+    
+                                        select {
+                                            padding: 1.5vw 8vw 2vw 3vw;
+                                        }
+                                    }
+                                }
+    
+                                .topnav {
+                                    margin-bottom: 4vw;
+    
+                                    li {
+                                        padding: 0 5vw;
+                                    }
+                                }
+
+                                .resultBox {
+
+                                    table {
+                                        margin-bottom: 4vw;
+
+                                        tr {
+
+                                            th {
+                                                height: 10vw;
+
+                                                p {
+                                                    padding: 0 2vw;
+                                                }
+
+                                                span {
+                                                    right: 4vw;
+                                                }
+                                            }
+
+                                            td {
+                                                height: 10vw;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .betBox {
+                                    
+                                    table {
+                                        margin-bottom: 4vw;
+
+                                        tr {
+
+                                            th {
+                                                height: 10vw;
+
+                                                &:first-child {
+                                                    padding-left: 5vw;
+                                                }
+
+                                                &:last-child {
+                                                    padding-right: 5vw;
+                                                }
+
+                                                p {
+                                                    font-size: 1rem;
+
+                                                    span {
+                                                        margin-left: 3vw;
+                                                    }
+                                                }
+                                            }
+
+                                            td {
+                                                height: 10vw;
+                                                padding: 0 2vw;
+
+                                                div {
+
+                                                    &.teamBox {
+                                                        padding: 2vw 0;
+
+                                                        p {
+
+                                                            &:last-child {
+                                                                margin-top: 1.5vw;
+
+                                                                span {
+                                                                    margin: 0 2vw;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+
+                                                    .cancelBtn {
+                                                        padding: 1.5vw 3vw;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    .betData {
+
+                                        .dataName {
+                                            padding: 2vw 0;
+                                            margin: 2vw 0;
+
+                                            p {
+
+                                                &:first-child {
+                                                    padding-left: 5vw;
+                                                }
+
+                                                &:last-child {
+                                                    padding-right: 5vw;
+                                                }
+                                            }
+                                        }
+
+                                        li {
+
+                                            .dataNum {
+                                                padding: 2vw 0;
+
+                                                span {
+                                                    left: 1vw;
+                                                    padding: 1vw;
+                                                }
+
+                                                p {
+
+                                                    &:nth-of-type(1) {
+                                                        padding-left: 5vw;
+                                                    }
+    
+                                                    &:last-child {
+                                                        padding-right: 5vw;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            &.mailPage {
+
+                                .topnav {
+                                    margin: 4vw 0;
+
+                                    li {
+                                        width: 25%;
+                                        padding: 2vw;
+                                        margin-right: 1vw;
+
+                                        &:last-child {
+                                            margin: 0;
+                                        }
+
+                                        p {
+                                            font-size: 0.75rem;
+                                        }
+                                    }
+                                }
+
+                                .messageBox {
+                                    
+                                    li {
+                                        padding: 5vw;
+                                        margin-bottom: 4vw;
+
+                                        i {
+                                            width: 11vw;
+                                            height: 11vw;
+                                            margin-right: 5vw;
+                                        }
+
+                                        .textBox {
+
+                                            .title {
+                                                margin-bottom: 2vw;
+                                            }
+                                            
+                                            .subTitle {
+                                                margin-bottom: 2vw;
+                                            }
+                                        }
+
+                                        .unRead {
+                                            width: 5vw;
+                                            height: 5vw;
+                                            margin-left: 5vw;
+                                        }
+                                    }
+
+                                }
+                            }
+
+                            .topLine {
+
+                                button {
+                                    padding: 2vw 5vw 2vw 8vw;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .filter {
+                
+                .jumpWindow {
+
+                    &.cancelBet {
+
+                        .content {
+
+                            table {
+
+                                tr {
+
+                                    td {
+
+                                        button {
+                                            width: 50%;
+                                            padding: 2vw 0;
+                                            margin: 3vw auto;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .closeWindow {
+                                width: 50%;
+                                padding: 2vw 0;
+                            }
+                        }
+                    }
+
+                    &.chooseball {
+
+                        .content {
+                            grid-template-columns: repeat(2,1fr);
+                            padding: 3vw;
+                            gap: 1vw;
+
+                            button {
+                                font-size: 0.8rem;
+                            }
+                        }
+
+                        .closeWindow {
+                            width: 50%;
+                            padding: 2vw 0;
+                            margin: 0 auto 3vw;
+                        }
+                    }
+
+                    &.choosedate {
+
+                        .content {
+                            grid-template-columns: repeat(2,1fr);
+                            padding: 3vw;
+                            gap: 1vw;
+
+                            button {
+                                font-size: 0.8rem;
+                            }
+                        }
+
+                        .closeWindow {
+                            width: 50%;
+                            padding: 2vw 0;
+                            margin: 0 auto 3vw;
+                        }
+                    }
+
+                    .jwTitle {
+                        height: 11vw;
+
+                        p {
+                            font-size: 1rem;
+                        }
+                    }
+
+                    .content {
+                        min-height: 27vh;
+                    }
+                }
+            }
+        }
+    }
+}

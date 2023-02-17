@@ -1,0 +1,377 @@
+header {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    //上
+    .top {
+        width: 100%;
+        height: 90px;
+        background: $mainBG_1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 24px;
+
+        .logo {
+            width: auto;
+            height: auto;
+
+            img {
+                height: 69px;
+                object-fit: contain;
+            }
+        }
+    
+        ul {
+            width: auto;
+            height: auto;
+            display: flex;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+    
+            li {
+                width: auto;
+                height: auto;
+                margin-right: 25px;
+               
+                &:last-of-type {
+                    margin: 0;
+                }
+    
+                &:hover,&:active,&.active {
+
+                    p {
+                        color: $mainColor_1;
+                    }
+
+                    i {
+                        background-position-y: 100%;
+                    }
+                }
+    
+                a {
+                    width: auto;
+                    height: auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+    
+                    i {
+                        width: 35px;
+                        height: 35px;
+                        margin-right: 5px;
+
+                        &.sport {
+                            background-position-x: 25%;
+                        }
+                        &.casino {
+                            background-position-x: 50%;
+                        }
+                        &.live {
+                            background-position-x: 75%;
+                        }
+                        &.event {
+                            background-position-x: 100%;
+                        }
+                    }
+    
+                    p {
+                        color: $header_topList_Color;
+                        font-size: 1rem;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+        // 已登入會員區
+        .mem_Area {
+            width: auto;
+            height: auto;
+            display: flex;
+            align-items: center;
+
+            // rwd縮排物件
+            .checkBox {
+                display: none;
+                width: auto;
+                height: 100%;
+                align-items: center;
+                position: relative;
+                cursor: pointer;
+                margin-right: 10px;
+
+                .title {
+                    color: $header_topList_Color;
+                    font-size: 0.85rem;
+                    font-weight: bold;
+                    display: flex;
+                    align-items: center;
+
+                    i {
+                        @include arrow_1;
+                        position: static;
+                        border-color: $header_topList_Color transparent;
+                        transform: translateY(0);
+                        margin-left: 5px;
+                    }
+                }
+
+                ul {
+                    width: 220px;
+                    height: auto;
+                    @include bottomList;
+                    position: absolute;
+                    top: 25px;
+                    left: -20px;
+                    padding: 20px;
+                    z-index: 100;
+
+                    li {
+                        width: 100%;
+                        height: auto;
+                        margin-bottom: 10px;
+
+                        &:first-child {
+                            display: none;
+                        }
+
+                        &:last-child {
+                            margin: 0;
+                        }
+
+                        a {
+                            width: 100%;
+                            height: auto;
+
+                            p {
+                                color: $mainColor_2;
+                                font-size: 0.75rem;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+            }
+
+            div {
+                width: auto;
+                height: auto;
+                display: flex;
+                align-items: center;
+                margin-right: 15px;
+
+                &.account {
+                    cursor: pointer;
+
+                    i { 
+                        color: $mainColor_1;
+                        font-size: 1rem;
+                        margin-right: 5px;
+                    }
+                }
+
+                .walletTitle {
+                    background: $subBG_1;
+                    border-radius: 5px;
+                    color: $mainColor_1;
+                    font-size: 0.85rem;
+                    font-weight: bold;
+                    padding: 5px;
+                    margin: 0 5px 0 10px;
+                }
+
+                p:not(.walletTitle) {
+                    color: $mainColor_1;
+                    font-size: 1rem;
+                    font-weight: bold;
+                }
+            }
+
+            .logoutBtn {
+                @include btnStyle_1;
+                background: $header_button_BG;
+                color: $mainColor_2;
+                padding: 5px 10px;
+                margin-left: 20px;
+
+                &:hover,&:active,&.active {
+                    background: $header_button_ActiveBG;
+                    color: $mainColor_1;
+                }
+            }
+        }
+
+        //平板nav
+        .rwd_TOPNav {
+            display: none;
+            width: auto;
+            height: auto;
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            .itemBox {
+                display: none;
+                width: 65px;
+                height: auto;
+                background: $subBG_1;
+                flex-direction: column;
+                align-items: center;
+                padding: 8px 0;
+
+                &.display {
+                    display: flex;
+                }
+
+                svg {
+                    width: 21px;
+                    height: 21px;
+                    fill: $mainColor_1;
+                }
+
+                p {
+                    color: $mainColor_1;
+                    font-size: 0.9rem;
+                    font-weight: bold;
+                    cursor: default;
+                    user-select: none;
+                    margin-top: 5px;
+                }
+            }
+        }
+
+        // 手機版語言列
+        .langBox {
+            width: auto;
+            height: auto;
+            @include lang;
+            order: 0;
+        }
+    }
+
+    //下
+    .bottom {
+        width: 100%;
+        height: 35px;
+        background: $subBG_1;
+
+        .mid {
+            width: 1200px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+
+            .searchBox {
+                width: auto;
+                height: auto;
+                position: relative;
+
+                input {
+                    width: 187px;
+                    height: 27px;
+                    @include inputStyle_1;
+                }
+    
+                i {
+                    color: $mainColor_2;
+                    font-size: 16px;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 5px;
+                }
+            }
+
+            .checkBox {
+                width: auto;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                position: relative;
+                margin-left: 10px;
+
+                .title {
+                    color: $mainColor_1;
+                    font-size: 0.85rem;
+                    font-weight: bold;
+                    display: flex;
+                    align-items: center;
+                    user-select: none;
+                    cursor: pointer;
+
+                    i {
+                        @include arrow_1;
+                        position: static;
+                        transform: translateY(0);
+                        margin-left: 5px;
+                    }
+                }
+
+                ul {
+                    width: 220px;
+                    height: auto;
+                    @include bottomList;
+                    position: absolute;
+                    top: 35px;
+                    left: -110px;
+
+                    .innerTitle {
+                        color: $mainColor_2;
+                        font-size: 0.875rem;
+                        font-weight: bold;
+                        margin-bottom: 20px;
+                    }
+
+                    li {
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        align-items: center;
+                        cursor: pointer;
+                        padding: 0 5px;
+                        margin-bottom: 10px;
+
+                        &:last-child {
+                            margin: 0;
+                        }
+
+                        label {
+                            width: 15px;
+                            height: 15px;
+                            @include checkboxStyle_1;
+                            margin-right: 10px;
+
+                            input {
+                                width: 100%;
+                                height: 100%;
+                                pointer-events: none;
+                                opacity: 0;
+                                margin: 0;
+                            }
+                        }
+
+                        p {
+                            color: $subColor_2;
+                            font-size: 0.75rem;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+
+            .time {
+                color: $mainColor_1;
+                font-size: 0.75rem;
+                font-weight: bold;
+                margin: 0 0 2px 15px;
+            }
+        }
+    }
+}
