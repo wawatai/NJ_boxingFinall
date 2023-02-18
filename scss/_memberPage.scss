@@ -1,10 +1,11 @@
-.innerBox {
+//2023-02-17 移除 .myPage ..mainArea
+.innerBox { 
     width: 100%;
     height: auto;
 
     //個人頁主頁
     &.userHome {
-        width: 100%;
+        width: 100%; //2023-02-17 + ↓
         height: auto;
         min-height: 600px;
 
@@ -16,7 +17,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-top: 20px;
+            margin-top: 20px; //2023-02-17 修
 
             .userBox {
                 width: 100%;
@@ -24,22 +25,22 @@
                 display: flex;
                 align-items: center;
                 position: relative;
-                padding: 20px;
+                padding: 20px; //2023-02-17 修
 
                 .userPic {
-                    width: 70px;
+                    width: 70px;     //2023-02-17 修 ↓
                     height: 70px;
                     margin-right: 20px;
                 }
 
                 p {
                     color: $mainColor_2;
-                    font-size: 1.5rem;
+                    font-size: 1.5rem;  //2023-02-17 修 ↓
                     font-weight: bold;
 
                     span {
                         display: block;
-                        color: $mainColor_1;
+                        color: $mainColor_1; //2023-02-17 修 ↓
                         font-size: 1.8rem;
                         margin-top: 10px;
                     }
@@ -47,10 +48,10 @@
             }
 
             ul {
-                display: none;
+                display: none;  //2023-02-17 修 
                 width: 100%;
                 height: auto;
-                border-top: solid 1px $mainBorder_1;
+                border-top: solid 1px $mainBorder_1; //2023-02-17 +
                 align-items: center;
                 justify-content: space-around;
 
@@ -64,7 +65,7 @@
                         height: auto;
 
                         .userNav_IC {
-                            width: 10vw;
+                            width: 10vw;       //2023-02-17 + ↓
                             height: 10vw;
                             margin: 0 auto 2vw;
 
@@ -96,7 +97,7 @@
         }
     }
 
-    //投注紀錄
+    //投注紀錄 //2023-02-17 + ↓
     &.betPage {
         min-height: 600px;
 
@@ -410,6 +411,14 @@
 
                             p {
                                 color: $mainColor_1;
+
+                                &.win {
+                                    color: $mainColor_2;
+                                }
+
+                                &.lose {
+                                    color: $subColor_4;
+                                }
                             }
                         }
 
@@ -628,7 +637,7 @@
         }
     }
 
-    //設定
+    //設定 //2023-02-17 + ↓
     &.setting {
         min-height: 600px;
 
@@ -690,7 +699,7 @@
         }
     }
 
-    //站內信
+    //站內信 //2023-02-17 + ↓
     &.mailPage {
         display: none;
 

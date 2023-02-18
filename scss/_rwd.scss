@@ -1,4 +1,4 @@
-//rwd_1400 網頁用
+//rwd_1400 網頁用 //2023-02-17 + ↓
 @media only screen and (max-width: 1400px) {
     html {
 
@@ -24,7 +24,7 @@
 
                 .top {
 
-                    &>ul {
+                    &>ul {  //2023-02-17 + ↓
                         left: 40%;
 
                         &>li {
@@ -69,7 +69,7 @@
     }
 }
 
-//rwd_1200 網頁用
+//rwd_1200 網頁用 //2023-02-17 
 @media only screen and (max-width: 1200px) {
     html {
 
@@ -167,7 +167,7 @@
                         }
                     }
 
-                    ul {
+                    ul { //2023-02-17 移除flex
                         left: 10px;
                         transform: translateX(0);
                         top: 70px;
@@ -175,7 +175,7 @@
                         li {
 
                             &:nth-of-type(3),
-                            &:nth-of-type(4),
+                            &:nth-of-type(4), //2023-02-17 + ↓
                             &.message,
                             &.rule,
                             &.setting{
@@ -210,7 +210,7 @@
             }
 
             main {
-                padding-top: 90px;
+                padding-top: 90px;  //2023-02-17 修
     
                 &.innerPage {
     
@@ -221,7 +221,7 @@
                             display: block;
                         }
 
-                        .leftSide {
+                        .leftSide {       //2023-02-17 + ↓
                             display: none;
                         }
 
@@ -243,7 +243,7 @@
                         position: fixed;
                         top: 90px;
                         left: 0;
-                        z-index: 150;
+                        z-index: 150;  //2023-02-17 修
         
                         &.active {
                             width: 100%;
@@ -295,7 +295,7 @@
     }
 }
 
-//rwd_820 平板用
+//rwd_820 平板用  // 2023-02-17 + ↓
 @media only screen and (max-width: 820px) {
     html {
         
@@ -670,7 +670,7 @@
     }
 }
 
-//rwd_670 平板用
+//rwd_670 平板用 //2023-02-17 + ↓
 @media only screen and (max-width: 670px) {
     html {
         
@@ -824,7 +824,7 @@
                                 .swiper-wrapper {
 
                                     .swiper-slide {
-                                        width: auto !important;
+                                        width: auto !important;  // 2023-02-17 +
 
                                         .gameTypeBox {
                                             padding: 0 3vw 3vw;
@@ -848,7 +848,7 @@
 
                             //首頁調整下選單樣式
                             .gameContent {
-                                padding: 0;
+                                padding: 0;  // 2023-02-17 修
 
                                 .content {
                                     gap: 4vw 0;
@@ -870,7 +870,7 @@
                                                 padding: 7vw 4vw 4vw;
                                                 margin-right: 4vw;
                                                 flex-shrink: 0;
-                                                order: 0;
+                                                order: 0; // 2023-02-17 +
                                                 margin: 0 2vw 0 0;
 
                                                 .outbox {
@@ -904,7 +904,7 @@
                             }
                         }
 
-                        //內頁
+                        //內頁  // 2023-02-17 +
                         .innerBox {
 
                             &.userHome {
@@ -1140,7 +1140,7 @@
                 }
             }
 
-            .filter {
+            .filter {  // 2023-02-17 + ↓
                 
                 .jumpWindow {
 

@@ -1092,6 +1092,12 @@ html body .innerBox.betPage .betBox table tr td:nth-of-type(odd) p {
 html body .innerBox.betPage .betBox table tr td:nth-of-type(even) p {
   color: #ffffff;
 }
+html body .innerBox.betPage .betBox table tr td:nth-of-type(even) p.win {
+  color: #dd2830;
+}
+html body .innerBox.betPage .betBox table tr td:nth-of-type(even) p.lose {
+  color: #66E123;
+}
 html body .innerBox.betPage .betBox table tr td div {
   width: 100%;
   display: -webkit-box;
@@ -3172,7 +3178,6 @@ html body .center .right .betBlock .closeRight {
   bottom: 0;
 }
 html body .center .right .betBlock .closeRight p {
-  color: #ffffff;
   font-size: 1rem;
   font-weight: bold;
 }

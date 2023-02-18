@@ -64,11 +64,11 @@ $header_button_ActiveBG: #FF9B9F;
         transition: 0.3s all;
         pointer-events: none;
     }
-}
+} // ↑ 2023-02-17 增 (顏色調整刪減)
 
 //mainWrap
 @mixin gBlock {
-
+    //2023-02-17 新增top結構
     .top {
         width: 100%;
         height: auto;
@@ -133,7 +133,7 @@ $header_button_ActiveBG: #FF9B9F;
 
     .down {
         width: 100%;
-        height: auto;
+        height: auto; //2023-02-17 移除background
         border-radius: 0 0 8px 8px;
         border: 3px solid #b8151b;
         position: relative;
@@ -151,7 +151,7 @@ $header_button_ActiveBG: #FF9B9F;
                 margin-bottom: 10px;
             }
     
-            .date {
+            .date { //2023-02-17 取消引用
                 border-bottom: solid 3px #cf0505;
                 color: #ffffff;
                 font-size: 1.3rem;
@@ -162,6 +162,7 @@ $header_button_ActiveBG: #FF9B9F;
                 position: relative;
             }
 
+            // 2023-02-17 移除外層 .infoDetail
             .time {
                 width: 100%;
                 display: flex;
@@ -180,6 +181,8 @@ $header_button_ActiveBG: #FF9B9F;
                     font-size: 0.9rem;
                     font-weight: bold;
                     margin-top: 2px;
+
+                    //2023-02-17 移除.more
                 }
             }
         }
@@ -188,7 +191,7 @@ $header_button_ActiveBG: #FF9B9F;
             width: 100%;
             height: auto;
             background: #202020;
-            padding: 20px;
+            padding: 20px; //2023-02-17 修
             margin: 30px 0;
 
             .outbox {
@@ -228,7 +231,7 @@ $header_button_ActiveBG: #FF9B9F;
                         margin-bottom: 30px;
                     }
                 }
-
+                // 2023-02-17 增
                 .VS {
                     color: #ffffff;
                     font-size: 1rem;
@@ -238,7 +241,8 @@ $header_button_ActiveBG: #FF9B9F;
                 }
             }
 
-            .betBtnLine {
+            // 2023-02-17 增button外層 .betBtnLine
+            .betBtnLine { 
                 width: 100%;
                 height: auto;
                 display: flex;
@@ -259,7 +263,7 @@ $header_button_ActiveBG: #FF9B9F;
                     }
                 }
             }
-
+            //2023-02-17 移除.VS
             .winRWD {
                 display: none;
                 color: #dd2830;
@@ -275,6 +279,7 @@ $header_button_ActiveBG: #FF9B9F;
         }
     }
 
+    // 2023-02-17 增
     .betwin {
         width: 100%;
         height: auto;
@@ -292,6 +297,7 @@ $header_button_ActiveBG: #FF9B9F;
         }
     }
 
+    //2023-02-17 增
     .betamount {
         width: 100%;
         height: auto;
@@ -319,6 +325,7 @@ $header_button_ActiveBG: #FF9B9F;
         }
     }
 
+    //2023-02-17 增
     .return {
         width: 100%;
         height: auto;
@@ -347,7 +354,7 @@ $header_button_ActiveBG: #FF9B9F;
 //jumpWindow
 $filter: #00000080;
 
-//button
+//button //2023-02-17 移除@mixin btnStyle_2
 @mixin btnStyle_1 {
     background: #dd2830;
     border-radius: 50px;
@@ -384,13 +391,13 @@ $filter: #00000080;
     font-weight: bold;
     padding-left: 10px;
 
-    &:focus {
+    &:focus { //2023-02-17 修
         background: #ffffff;
         color: #000000;
     }
 }
 
-//select
+//select //2023-02-17 移除@mixin selectStyle_2
 @mixin selectStyle_1 {
     background: none;
     border: 2px solid #ffffff;
@@ -403,7 +410,12 @@ $filter: #00000080;
     }
 }
 
-//共用
+//2023-02-17 移除
+    //@mixin arrow_2 
+    //@mixin mobile_Title 
+    //@mixin bigtitle_Line
+    //@mixin betRecordBtn
+//共用 
 @mixin arrow_1 {
     width: 0;
     height: 0;

@@ -15,7 +15,7 @@ html {
 
             &.innerPage {
 
-                .center {
+                .center { //2023-02-18 增
 
                     .left {
                         display: none;
@@ -24,6 +24,7 @@ html {
             }
         }
 
+        //2023-02-17 移除引入
         @import "./header";
         @import "./memberPage";
         @import "./jumpWIndow";

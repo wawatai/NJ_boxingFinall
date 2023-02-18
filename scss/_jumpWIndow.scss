@@ -17,7 +17,7 @@
 
     .jumpWindow {
         display: none;
-        width: 40%;
+        width: 40%; //2023-02-18 修
         height: auto;
         background: $subBG_2;
         border: 1px solid $mainBorder_1;
@@ -28,7 +28,7 @@
             display: block;
         }
 
-        //投注中請稍等
+        //投注中請稍等 //2023-02-18 增
         &.plzWait {
 
             .content {
@@ -44,7 +44,7 @@
             }
         }
 
-        //投注狀態(成功/失敗)
+        //投注狀態(成功/失敗) //2023-02-18 增
         &.betState {
 
             .content {
@@ -59,11 +59,11 @@
                 }
 
                  .closeWindow {
-                    width: 30%;
+                    width: 30%;  //2023-02-18 修
                     height: auto;
                     @include btnStyle_1;
-                    padding: 10px 0;
-                    margin: 0 auto 20px;
+                    padding: 10px 0;  //2023-02-18 修
+                    margin: 0 auto 20px;  //2023-02-18 修
                 }
             }
         }
@@ -107,13 +107,13 @@
                                     p {
                                         
                                        span {
-                                        line-height: 24px;
+                                        line-height: 24px;  //2023-02-18 修
                                         text-align: center;
 
                                         &.vs {
                                             color: $subColor_1;
                                             font-size: 1rem;
-                                            margin: 0 20px;
+                                            margin: 0 20px;  //2023-02-18 修
                                         }
                                    }
                                     }
@@ -135,7 +135,7 @@
                             max-width: 0;
                             height: auto;
                             vertical-align: middle;
-                            padding: 16px 0;
+                            padding: 16px 0;  //2023-02-18 修
 
                             &:first-child {
                                 width: 35%;
@@ -148,7 +148,7 @@
 
 
                             &:last-child {
-                                width: 65%;
+                                width: 65%;  //2023-02-18 增
 
                                 p {
                                     color: $mainColor_1;
@@ -157,7 +157,7 @@
 
                             p {
                                 font-size: 0.975rem;
-                                @include textHide;
+                                @include textHide;  //2023-02-18 增
                             }
 
                             button {
@@ -183,7 +183,7 @@
             }
         }
 
-        //投注結果-選擇球種
+        //投注結果-選擇球種 //2023-02-18 增
         &.chooseball {
 
             .content {
@@ -203,7 +203,7 @@
             }
 
             .closeWindow {
-                width: 30%;
+                width: 30%; //2023-02-18 修
                 height: auto;
                 @include btnStyle_1;
                 padding: 10px 0;
@@ -211,7 +211,7 @@
             }
         }
 
-        //投注結果-選擇日期
+        //投注結果-選擇日期 //2023-02-18 增
         &.choosedate {
 
             .content {
@@ -242,7 +242,7 @@
 
         .jwTitle {
             width: 100%;
-            height: 50px;
+            height: 50px; //2023-02-18 修
             background: $mainBG_1;
             display: flex;
             align-items: center;
@@ -252,13 +252,13 @@
 
             p {
                 color: $mainColor_1;
-                font-size: 1.2rem;
+                font-size: 1.2rem; //2023-02-18 修
                 font-weight: bold;
             }
 
             i {
                 color: $mainColor_1;
-                font-size: 1.5rem;
+                font-size: 1.5rem; //2023-02-18 修
                 position: absolute;
                 right: 20px;
                 cursor: pointer;
@@ -268,8 +268,8 @@
         .content {
             width: 100%;
             height: auto;
-            min-height: 200px;
-            padding: 0 24px 24px;
+            min-height: 200px; //2023-02-18 修
+            padding: 0 24px 24px; //2023-02-18 修
         }
     }
 }

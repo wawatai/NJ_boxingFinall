@@ -11,7 +11,7 @@
     <script src="../js/js.js"></script>
 </head>
 <body onload="currentTime()">
-    <header>
+    <header> <!-- 2023-02-17 移除class="logINN" -->
         <!-- 上 -->
        <div class="top">
            <a href="../index.html" class="logo">
@@ -81,13 +81,16 @@
                    <i class="fa-solid fa-user"></i>
                    <p>qa8</p>
                </div>
+               <!-- 2023-02-17 div class="money" -->
                <div class="wallet">
+                <!-- 2023-02-17 修改結構 + class="walletTitle" -->
                    <p class="walletTitle">マイベット</p>
                    <p>
                        $
                        <span class="walletNum">0.00</span>
                    </p>
                </div>
+               <!-- 2023-02-17 新增登出按鈕 -->
                <button class="logoutBtn" onclick="window.location.href='../index.html'">
                    ログアウト
                </button>
@@ -109,6 +112,7 @@
                    <p>閉じる</p>
                </div>
            </div>
+           <!-- 2023-02-17 修改lang結構 + 下部 -->
            <label class="langBox">
                 <select>
                     <option value="">日本語</option>
@@ -154,6 +158,7 @@
            </div>
        </div>
     </header>
+    <!-- 2023-02-17 移除class="inMain、messagePage"-->
     <main class="innerPage">
         <div class="center">
             <!-- 左主NAV -->
@@ -313,6 +318,7 @@
             </section>
             <!-- 左 -->
             <section class="leftSide">
+            <!-- 2023-02-17 移除外結構navoutter + 用不到到的頁面-->
                 <ul>
                     <li>
                         <a href="./betResult.html">
@@ -348,11 +354,12 @@
             </section>
             <!-- 中 -->
             <section class="mainArea">
-                <div class="innerBox mailPage outter display">
+                <div class="innerBox mailPage outter display"> <!-- 2023-02-17 新增class="mailPage" -->
                     <div class="topLine small">
                         <button class="backBtn" onclick="window.location.href='./memberPage.html'">戻る</button>
                         <p class="pageName">メッセージセンター</p>
                     </div>
+                    <!-- 2023-02-17 移除div class="topnav" -->
                     <ul class="messageBox">
                         <li>
                             <i class="message_ic"></i>
@@ -421,7 +428,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="innerBox mailPage inner">
+                <div class="innerBox mailPage inner"> <!-- 2023-02-17 新增class="mailPage" -->
                     <div class="topLine">
                         <button class="backBtn">戻る</button>
                         <p class="pageName">ABB題名</p>
@@ -430,7 +437,7 @@
                     <div class="messageCnt">
                         <p class="date">
                             2021-12-18 09:13:25
-                            <button>戻る</button>
+                            <button>戻る</button> <!-- 2023-02-17 新增button-->
                         </p>
                         <p>親愛なるメンバー、このプラットフォームの銀行カード入出金チャネルメンテナンスが完了し、営業しておりますご迷惑</p>
                         <p>をおかけいたしますがよろしくお願いいたしますあなたのサポートと愛に感謝します。</p>
@@ -491,6 +498,7 @@
             <p class="copyRight">スポーツベット・カジノなら MANEKI</p>
             <p class="copyRight">©2023 MANEKI</p>
         </div>
+        <!-- 2023-02-17 移除 mobileFooter-->
     </footer>
 </body>
 </html>

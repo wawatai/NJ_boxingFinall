@@ -11,6 +11,7 @@
     <script src="../js/js.js"></script>
 </head>
 <body onload="currentTime()">
+    <!-- 2023-02-17 移除class="logINN" -->
     <header>
         <!-- 上 -->
        <div class="top">
@@ -94,6 +95,7 @@
                    <p>閉じる</p>
                </div>
            </div>
+           <!-- 2023-02-17 修改lang結構 + 下部 -->
            <label class="langBox">
                 <select>
                     <option value="">日本語</option>
@@ -139,6 +141,7 @@
            </div>
        </div>
     </header>
+    <!-- 2023-02-17 移除class="inMain、betPage" -->
     <main class="innerPage">
         <div class="center">
             <!-- 左主NAV -->
@@ -298,6 +301,7 @@
             </section>
             <!-- 左 -->
             <section class="leftSide">
+            <!-- 2023-02-17 移除外結構navoutter + 用不到到的頁面-->
                 <ul>
                     <li>
                         <a href="./betResult.html">
@@ -333,12 +337,14 @@
             </section>
             <!-- 中 -->
             <section class="mainArea">
+                <!-- 2023-02-17 新增class="betPage" -->
                 <div class="innerBox betPage">
                     <div class="topLine">
                         <button class="backBtn" onclick="window.location.href='../index.html'">戻る</button>
                         <p class="pageName">ベット履歷</p>
                     </div>
                     <div class="selectNav">
+                        <!-- 2023-02-17 修改結構項目-->
                         <div class="gameType callgameType">
                             <p>格鬪技</p>
                         </div>
@@ -795,6 +801,7 @@
                             </li>
                         </ul>
                     </div>
+                    <!-- 2023-02-17 移除class="innerBox" -->
                     <div class="myResult">
                         <div class="betAmount">
                             <p>賭け
@@ -910,6 +917,7 @@
                     </tr>
                     <tr>
                         <td>
+                            <!-- 2023-02-17 取消換行 -->
                             <p>賭けのオプション</p>
                         </td>
                         <td>
@@ -945,7 +953,7 @@
                 <button class="closeWindow">閉じる</button>
             </div>
         </div>
-        <!-- 2023-02-17 新增 -->
+        <!-- 2023-02-17 新增彈窗 -->
         <div class="jumpWindow chooseball">
             <div class="jwTitle">
                 <p>ボールを選ぶ</p>

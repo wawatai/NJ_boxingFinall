@@ -18,18 +18,18 @@
             color: $mainColor_2;
             font-size: 1.2rem;
             font-weight: bold;
-            border-bottom: 2px solid $mainBorder_1;
+            border-bottom: 2px solid $mainBorder_1; //2023-02-18 增
             padding: 10px 0;
         }
 
         ul {
             width: 100%;
-            height: auto;
+            height: auto; //2023-02-18 移除background
 
             li {
                 width: 100%;
                 height: 50px;
-                border-bottom: 1px solid $mainBorder_2;
+                border-bottom: 1px solid $mainBorder_2; //2023-02-18 增
                 overflow: hidden;
 
                 &:hover,&:active,&.active {
@@ -75,20 +75,20 @@
     //內頁左
     .leftSide {
         width: 250px;
-        height: auto;
+        height: auto; //2023-02-18 修
         transition: all 0.3s;
         flex-shrink: 0;
 
-        ul {
+        ul { //2023-02-18 移除外層.navoutter
             width: 100%;
             height: auto;
             background: $mainBG_2;
-            margin-top: 20px;
+            margin-top: 20px; //2023-02-18 增
 
             li {
                 width: 100%;
                 height: 50px;
-                border: 1px solid transparent;
+                border: 1px solid transparent;  //2023-02-18 增
                 overflow: hidden;
 
                 &:hover,&:active,&.active {
@@ -128,7 +128,7 @@
         }
     }
 
-    //中
+    //中  //2023-02-18 移除.searchBox / .featured
     .mainArea {
         width: 100%;
         height: auto;
@@ -326,14 +326,15 @@
                 }
             }
         }
+        // 2023-02-17 移除.swiper03 / .gameDetail
     }
 
     //右
     .right {
         width: 300px;
-        height: auto;
+        height: auto; // 2023-02-17 移除max-height
         overflow: hidden;
-        margin-top: 20px;
+        margin-top: 20px; // 2023-02-17 增 
         flex-shrink: 0;
 
         .betBlock {
@@ -389,8 +390,8 @@
 
                 li {
                     width: auto;
-                    height: 40px;
-                    border-bottom: solid 2px transparent;
+                    height: 40px; // 2023-02-17 修
+                    border-bottom: solid 2px transparent; // 2023-02-17 增
 
                     &:hover,&:active,&.active {
                         border-color: $mainBorder_1;
@@ -454,14 +455,13 @@
 
                     .bdOuter {
                         width: 100%;
-                        height: auto;
-                        padding: 15px 10px;
+                        height: auto; // 2023-02-17 移除 max-height / overflow / @include
+                        padding: 15px 10px; // 2023-02-17 修
                         
                         // 投注注單
                         .betDetail {
                             width: 100%;
-                            height: auto;
-
+                            height: auto; //2023-02-17 ↓ 刪除~ &:not(:first-child)
                             .bdTitle {
                                 width: 100%;
                                 background: $subBG_2;
@@ -482,7 +482,7 @@
                                     color: $subColor_1;
                                     font-size: 0.975rem;
                                     font-weight: bold;
-                                    white-space: nowrap;
+                                    white-space: nowrap; // 2023-02-17 + / 移除  @include textHide;
                                     position: absolute;
                                     left: 50%;
                                     transform: translateX(-50%);
@@ -492,11 +492,11 @@
                             .bdContent {
                                 width: 100%;
                                 height: auto;
-                                @include gBlock;
+                                @include gBlock; //2023-02-17 + 引用
                                 background: $BG;
-                                border: solid 1px $mainBorder_1;
+                                border: solid 1px $mainBorder_1;  //2023-02-17 + 
                                 border-radius: 5px;
-                                padding: 0 10px 10px;
+                                padding: 0 10px 10px; //2023-02-17 修
 
                                 .down {
                                     border: none;
@@ -549,13 +549,13 @@
                             justify-content: space-between;
                             padding: 10px;
 
-                            &:last-child {
+                            &:last-child {  //2023-02-17 +
                                 padding: 10px 10px 20px;
                             }
 
                             p {
                                 color: $mainColor_2;
-                                font-size: 1rem;
+                                font-size: 1rem;   //2023-02-17 + ↓
                                 font-weight: bold;
                                 flex-shrink: 0;
                             }
@@ -569,7 +569,7 @@
                             .changeBtn {
                                 width: 60px;
                                 height: 30px;
-                                @include rowBtn;
+                                @include rowBtn; //2023-02-17 + 引用
 
                                 span {
                                     width: 25px;
@@ -578,7 +578,7 @@
                             }
 
                             .okBtn {
-                                    width: auto;
+                                    width: auto;  //2023-02-17 +
                                     height: auto;
                                     @include btnStyle_1;
                                     background: $subBG_3;
@@ -593,7 +593,7 @@
             .closeRight {
                 display: none;
                 width: 100%;
-                height: 50px;
+                height: 50px; //2023-02-17 修
                 background: $mainBG_1;
                 align-items: center;
                 justify-content: center;
@@ -601,8 +601,7 @@
                 left: 0;
                 bottom: 0;
 
-                p {
-                    color: $mainColor_1;
+                p { //2023-02-17 修                    color: $mainColor_1;
                     font-size: 1rem;
                     font-weight: bold;
                 }

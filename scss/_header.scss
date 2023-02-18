@@ -36,7 +36,7 @@ header {
     
             li {
                 width: auto;
-                height: auto;
+                height: auto; //2023-02-17 增
                 margin-right: 25px;
                
                 &:last-of-type {
@@ -49,11 +49,12 @@ header {
                         color: $mainColor_1;
                     }
 
-                    i {
+                    i { //2023-02-17 增
                         background-position-y: 100%;
                     }
                 }
 
+                //2023-02-17 增
                 &.message,
                 &.rule,
                 &.setting {
@@ -69,7 +70,7 @@ header {
     
                     i {
                         width: 35px;
-                        height: 35px;
+                        height: 35px; //2023-02-17 修
                         margin-right: 5px;
 
                         &.sport {
@@ -94,7 +95,7 @@ header {
                 }
             }
         }
-
+        //2023-02-17 移除 .loginArea 未登入登入區
         // 已登入會員區
         .mem_Area {
             width: auto;
@@ -104,12 +105,12 @@ header {
 
             // rwd縮排物件
             .checkBox {
-                display: none;
+                display: none; // 2023-02-17 增
                 width: auto;
                 height: 100%;
                 align-items: center;
                 position: relative;
-                cursor: pointer;
+                cursor: pointer; // 2023-02-17 增
                 margin-right: 10px;
 
                 .title {
@@ -120,7 +121,7 @@ header {
                     align-items: center;
 
                     i {
-                        @include arrow_1;
+                        @include arrow_1; //2023-02-17 引用樣式 + 修改
                         position: static;
                         border-color: $header_topList_Color transparent;
                         transform: translateY(0);
@@ -137,7 +138,7 @@ header {
                     left: -20px;
                     padding: 20px;
                     z-index: 100;
-
+                    // 2023-02-17 移除display .innerTiTle
                     li {
                         width: 100%;
                         height: auto;
@@ -158,7 +159,8 @@ header {
                             p {
                                 color: $mainColor_2;
                                 font-size: 0.75rem;
-                                font-weight: bold;
+                                font-weight: bold; 
+                                //2023-02-18 移除margin-bottom
                             }
                         }
                     }
@@ -170,7 +172,7 @@ header {
                 height: auto;
                 display: flex;
                 align-items: center;
-                margin-right: 15px;
+                margin-right: 15px; //2023-02-17 修
 
                 &.account {
                     cursor: pointer;
@@ -182,6 +184,7 @@ header {
                     }
                 }
 
+                //2023-02-17 增
                 .walletTitle {
                     background: $subBG_1;
                     border-radius: 5px;
@@ -198,7 +201,7 @@ header {
                     font-weight: bold;
                 }
             }
-
+            //2023-02-17 增
             .logoutBtn {
                 @include btnStyle_1;
                 background: $header_button_BG;
@@ -258,7 +261,7 @@ header {
             width: auto;
             height: auto;
             @include lang;
-            order: 0;
+            order: 0; //2023-02-17 刪除以下~.mobile_Login
         }
     }
 
@@ -266,7 +269,7 @@ header {
     .bottom {
         width: 100%;
         height: 35px;
-        background: $subBG_1;
+        background: $subBG_1; //2023-02-17 移除 position: relative;
 
         .mid {
             width: 1200px;
@@ -314,7 +317,7 @@ header {
                     cursor: pointer;
 
                     i {
-                        @include arrow_1;
+                        @include arrow_1; //2023-02-17 新增引用
                         position: static;
                         transform: translateY(0);
                         margin-left: 5px;
