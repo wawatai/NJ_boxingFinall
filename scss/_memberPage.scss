@@ -413,11 +413,12 @@
                                 color: $mainColor_1;
 
                                 &.win {
-                                    color: $mainColor_2;
-                                }
-
-                                &.lose {
                                     color: $subColor_4;
+                                    
+                                }
+        
+                                &.lose {
+                                    color: $mainColor_2;
                                 }
                             }
                         }
@@ -631,6 +632,15 @@
                         color: $mainColor_1;
                         font-size: 1.2rem;
                         margin-top: 10px;
+
+                        &.win {
+                            color: $subColor_4;
+                            
+                        }
+
+                        &.lose {
+                            color: $mainColor_2;
+                        }
                     }
                 }
             }

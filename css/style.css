@@ -1093,10 +1093,10 @@ html body .innerBox.betPage .betBox table tr td:nth-of-type(even) p {
   color: #ffffff;
 }
 html body .innerBox.betPage .betBox table tr td:nth-of-type(even) p.win {
-  color: #dd2830;
+  color: #66E123;
 }
 html body .innerBox.betPage .betBox table tr td:nth-of-type(even) p.lose {
-  color: #66E123;
+  color: #dd2830;
 }
 html body .innerBox.betPage .betBox table tr td div {
   width: 100%;
@@ -1343,6 +1343,12 @@ html body .innerBox.betPage .myResult div p span {
   color: #ffffff;
   font-size: 1.2rem;
   margin-top: 10px;
+}
+html body .innerBox.betPage .myResult div p span.win {
+  color: #66E123;
+}
+html body .innerBox.betPage .myResult div p span.lose {
+  color: #dd2830;
 }
 html body .innerBox.setting {
   min-height: 600px;
