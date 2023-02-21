@@ -150,6 +150,13 @@ $(function(){
         .removeClass("active");
     })
 
+    //2023-02-21 + 快速投注功能
+    $(".right .betBlock .betContent .betData .betTotal .quickBetBtn").click(function(){
+        var betVal = $(this).text();
+
+        console.log(betVal);
+    })
+
     $(".right .betBlock .betContent .changeBtn").click(function(){
         $(this)
         .toggleClass("active");

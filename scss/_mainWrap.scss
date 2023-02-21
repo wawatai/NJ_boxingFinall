@@ -549,6 +549,31 @@
                             justify-content: space-between;
                             padding: 10px;
 
+                            &:first-child { //2023-02-21 +
+                                flex-direction: column;
+                                p {
+                                    color: $mainColor_1;
+                                    text-align: center;
+                                }
+
+                                .quickBetBtn {
+                                    width: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    margin-top: 20px;
+
+                                    button {
+                                        @include btnStyle_1;
+                                        width: 23%;
+                                        height: auto;
+                                        border-radius: 5px;
+                                        padding: 5px 0;
+                                    }
+                                }
+                               
+                            }
+
                             &:last-child {  //2023-02-17 +
                                 padding: 10px 10px 20px;
                             }

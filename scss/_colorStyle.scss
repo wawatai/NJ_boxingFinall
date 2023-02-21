@@ -248,9 +248,10 @@ $header_button_ActiveBG: #FF9B9F;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+                padding: 0 8%; // 2023-02-21 增
                 
                 button {
-                    width: 90%;
+                    width: 33%; // 2023-02-21 修
                     background: #dd2830;
                     color: #ffffff;
                     font-weight: bold;

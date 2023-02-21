@@ -893,6 +893,14 @@
                                                 .winRWD {
                                                     display: block;
                                                 }
+
+                                                .betBtnLine {  // 2023-02-21 增 調整手機版投注按鈕大小
+                                                    padding: 0;
+
+                                                    button {
+                                                        width: 38%;
+                                                    }
+                                                }
                                             }
 
                                             .winner {
@@ -932,12 +940,13 @@
                                     div:not(.selectBox) {
                                         padding: 2vw 3vw 2.5vw;
                                         margin-right: 2vw;
+                                        white-space: nowrap;
                                     }
     
                                     .selectBox {
     
                                         select {
-                                            padding: 1.5vw 8vw 2vw 3vw;
+                                            padding: 2.5vw 8vw 2.5vw 3vw;
                                         }
                                     }
                                 }
@@ -1133,6 +1142,35 @@
 
                                 button {
                                     padding: 2vw 5vw 2vw 8vw;
+                                }
+                            }
+                        }
+                    }
+
+                    //2023-02-21 手機版注單 .betContent 隱藏叉叉按鈕<i>
+                    .right {
+
+                        .betBlock {
+
+                            .betContent {
+
+                                .betData {
+
+                                    .bdOuter {
+
+                                        .betDetail {
+
+                                            .bdContent {
+
+                                                .top {
+
+                                                    i  {
+                                                        display: none;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }

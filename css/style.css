@@ -782,6 +782,9 @@ html body .innerBox.betPage .selectNav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 15px 0;
 }
 html body .innerBox.betPage .selectNav div:not(.selectBox) {
@@ -2503,9 +2506,10 @@ html body .center .mainArea .gameContent .content .gBlock .down .pkTeam .betBtnL
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0 8%;
 }
 html body .center .mainArea .gameContent .content .gBlock .down .pkTeam .betBtnLine button {
-  width: 90%;
+  width: 33%;
   background: #dd2830;
   color: #ffffff;
   font-weight: bold;
@@ -2955,9 +2959,10 @@ html body .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdC
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0 8%;
 }
 html body .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .down .pkTeam .betBtnLine button {
-  width: 90%;
+  width: 33%;
   background: #dd2830;
   color: #ffffff;
   font-weight: bold;
@@ -3086,6 +3091,54 @@ html body .center .right .betBlock .betContent .betData .betTotal li {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 10px;
+}
+html body .center .right .betBlock .betContent .betData .betTotal li:first-child {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+html body .center .right .betBlock .betContent .betData .betTotal li:first-child p {
+  color: #ffffff;
+  text-align: center;
+}
+html body .center .right .betBlock .betContent .betData .betTotal li:first-child .quickBetBtn {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+html body .center .right .betBlock .betContent .betData .betTotal li:first-child .quickBetBtn button {
+  background: #dd2830;
+  border-radius: 50px;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  width: 23%;
+  height: auto;
+  border-radius: 5px;
+  padding: 5px 0;
+}
+html body .center .right .betBlock .betContent .betData .betTotal li:first-child .quickBetBtn button:hover, html body .center .right .betBlock .betContent .betData .betTotal li:first-child .quickBetBtn button:active, html body .center .right .betBlock .betContent .betData .betTotal li:first-child .quickBetBtn button.active {
+  background: #b8151b;
 }
 html body .center .right .betBlock .betContent .betData .betTotal li:last-child {
   padding: 10px 10px 20px;
@@ -3972,6 +4025,12 @@ html body main .center .leftSide {
   html body main .center .mainArea.index .gameContent .content .gBlock .down .pkTeam .winRWD {
     display: block;
   }
+  html body main .center .mainArea.index .gameContent .content .gBlock .down .pkTeam .betBtnLine {
+    padding: 0;
+  }
+  html body main .center .mainArea.index .gameContent .content .gBlock .down .pkTeam .betBtnLine button {
+    width: 38%;
+  }
   html body main .center .mainArea.index .gameContent .content .gBlock .down .winner {
     display: none;
   }
@@ -3987,9 +4046,10 @@ html body main .center .leftSide {
   html body main .center .mainArea .innerBox.betPage .selectNav div:not(.selectBox) {
     padding: 2vw 3vw 2.5vw;
     margin-right: 2vw;
+    white-space: nowrap;
   }
   html body main .center .mainArea .innerBox.betPage .selectNav .selectBox select {
-    padding: 1.5vw 8vw 2vw 3vw;
+    padding: 2.5vw 8vw 2.5vw 3vw;
   }
   html body main .center .mainArea .innerBox.betPage .topnav {
     margin-bottom: 4vw;
@@ -4105,6 +4165,9 @@ html body main .center .leftSide {
   }
   html body main .center .mainArea .innerBox .topLine button {
     padding: 2vw 5vw 2vw 8vw;
+  }
+  html body main .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .top i {
+    display: none;
   }
   html body .filter .jumpWindow.cancelBet .content table tr td button {
     width: 50%;
