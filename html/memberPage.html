@@ -91,9 +91,7 @@
                    </p>
                </div>
                <!-- 2023-02-17 刪除message-->
-               <button class="logoutBtn" onclick="window.location.href='../index.html'">
-                   ログアウト
-               </button>
+               <!--2023-02-22 移除logoutBtn-->
            </div>
            <!-- 2023-02-17 刪除class="logInner"-->
            <div class="rwd_TOPNav">
@@ -114,51 +112,15 @@
                </div>
            </div>
            <!-- 2023-02-17 改結構 -->
-           <label class="langBox">
-                <select>
-                    <option value="">日本語</option>
-                </select>
-                <i class="arrow_ic"></i>
-            </label>
+          <!-- 2023-02-22 移除語言列 -->
        </div>
        <!-- 2023-02-17 加回下部 -->
        <!-- 下 -->
-       <div class="bottom">
+             <div class="bottom">
            <div class="mid">
-               <label class="searchBox">
-                   <input type="text">
-                   <i class="fa-solid fa-magnifying-glass"></i>
-               </label>
-               <div class="checkBox">
-                   <p class="title">
-                       <span>デシマルオッズ</span>
-                       <i class="arrow"></i>
-                   </p>
-                   <ul>
-                       <p class="innerTitle">デシマルオッズ</p>
-                       <li>
-                           <label class="active">
-                               <input type="checkbox">
-                           </label>
-                           <p>デシマルオッズ</p>
-                       </li>
-                       <li>
-                           <label>
-                               <input type="checkbox">
-                           </label>
-                           <p>フラクショナルオッズ</p>
-                       </li>
-                       <li>
-                           <label>
-                               <input type="checkbox">
-                           </label>
-                           <p>アメリカンオッズ</p>
-                       </li>
-                   </ul>
-               </div>
                <p class="time"></p>
            </div>
-       </div>
+       </div> <!-- 2023-02-22 移除搜尋列&checkbox -->
    </header>
    <!-- 2023-02-17 移除class="inMain、myPage" -->
     <main class="innerPage">
@@ -402,42 +364,13 @@
     </main>
     <footer>
         <!-- 上 -->
-        <div class="top">
-            <div class="infoLine">
-                <div class="lang">
-                    <p class="langTitle">言語:</p>
-                    <i class="flag jp"></i>
-                    <ul class="checkBox">
-                        <p class="innerTitle">言語</p>
-                        <li>
-                            <i class="flag jp"></i>
-                            <label class="active">
-                                <input type="checkbox">
-                            </label>
-                            <p>日本語</p>
-                        </li>
-                        <li>
-                            <i class="flag uk"></i>
-                            <label>
-                                <input type="checkbox">
-                            </label>
-                            <p>English</p>
-                        </li>
-                    </ul>
-                </div>
+       <div class="top">
+            <div class="infoLine"> <!--2023-02-22 移除語言列&betRate-->
                 <p class="payway">
                     <span>VISA</span>
                     <span>MASTERCARD</span>
                     <span>BITCON</span>
                 </p>
-                <div class="betRate">
-                    <p>オッズ形式</p>
-                    <select name="betrate">
-                        <option value="デシマルオッズ">デシマルオッズ</option>
-                        <option value="フラクショナルオッズ">フラクショナルオッズ</option>
-                        <option value="AMERICAN">アメリカンオッズ</option>
-                    </select>
-                </div>
             </div>
             <div class="company">
                 <img class="logo" src="../image/logo.png">

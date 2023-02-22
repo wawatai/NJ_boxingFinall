@@ -602,13 +602,12 @@
         }
 
         .myResult {
-            display: none;
             width: 100%;
             height: auto;
+            display: flex;
             background: $mainBG_2;
             border-top: 1px solid $mainBorder_1;
-            position: fixed;
-            left: 0;
+            position: relative;
     
             div {
                 width: 50%;
@@ -863,6 +862,22 @@
                         transform: translateY(-50%);
                     }
                 }
+            }
+        }
+    }
+
+    //遊戲規則
+    &.rulePage {
+        width: 100%;
+        height: auto;
+
+        .quickTag {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+
+            button {
+                @include btnStyle_1;
+                border-radius: 5px;
             }
         }
     }

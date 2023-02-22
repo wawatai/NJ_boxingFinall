@@ -1310,13 +1310,14 @@ html body .innerBox.betPage .betBox .betData li table {
   width: 94%;
 }
 html body .innerBox.betPage .myResult {
-  display: none;
   width: 100%;
   height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background: #202020;
   border-top: 1px solid #cf0505;
-  position: fixed;
-  left: 0;
+  position: relative;
 }
 html body .innerBox.betPage .myResult div {
   width: 50%;
@@ -1614,6 +1615,38 @@ html body .innerBox.mailPage .messageCnt .date button:before {
   left: 12px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+html body .innerBox.rulePage {
+  width: 100%;
+  height: auto;
+}
+html body .innerBox.rulePage .quickTag {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+}
+html body .innerBox.rulePage .quickTag button {
+  background: #dd2830;
+  border-radius: 50px;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  border-radius: 5px;
+}
+html body .innerBox.rulePage .quickTag button:hover, html body .innerBox.rulePage .quickTag button:active, html body .innerBox.rulePage .quickTag button.active {
+  background: #b8151b;
 }
 html body .innerBox .topLine {
   width: 100%;
@@ -3777,9 +3810,9 @@ html body footer .mobileFooter li:active a p, html body footer .mobileFooter li.
     margin-top: 4vw;
   }
   html body main .center .mainArea .innerBox.betPage .myResult {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    width: 100%;
+    position: fixed;
+    left: 0;
   }
   html body main .center .mainArea .innerBox.betPage .myResult div p span {
     margin-top: 2vw;
