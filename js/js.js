@@ -150,16 +150,21 @@ $(function(){
         .removeClass("active");
     })
 
-    //2023-02-21 + 快速投注功能
-    $(".right .betBlock .betContent .betData .betTotal .quickBetBtn").click(function(){
-        var betVal = $(this).text();
-
-        console.log(betVal);
-    })
-
-    $(".right .betBlock .betContent .changeBtn").click(function(){
+    //2023-02-17 新增切換按鈕 不能點&&跳提示字
+    $(document).on("click",".right .betBlock .betContent .changeBtn",function(){
         $(this)
         .toggleClass("active");
+
+        $(".right .betBlock .betContent .betData .betTotal .okBtn")
+        .toggleClass("disabled");
+
+        $(".right .betBlock .betContent .betTotal li:first-child")
+        .toggleClass("undisplay");
+
+        $(".right .betBlock .betContent .betTotal li:nth-of-type(3) .amount")
+        .toggleClass("undisplay")
+        .next()
+        .toggleClass("undisplay");
     })
 
     //2023-02-17 新增請稍等 投注成功彈窗
@@ -206,6 +211,7 @@ $(function(){
         $(".betPage .betBox")
         .toggleClass("display");
     })
+
 })
 
 //myResult

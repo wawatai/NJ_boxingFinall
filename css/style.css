@@ -3098,6 +3098,9 @@ html body .center .right .betBlock .betContent .betData .betTotal li:first-child
       -ms-flex-direction: column;
           flex-direction: column;
 }
+html body .center .right .betBlock .betContent .betData .betTotal li:first-child.undisplay {
+  display: none;
+}
 html body .center .right .betBlock .betContent .betData .betTotal li:first-child p {
   color: #ffffff;
   text-align: center;
@@ -3139,6 +3142,24 @@ html body .center .right .betBlock .betContent .betData .betTotal li:first-child
 }
 html body .center .right .betBlock .betContent .betData .betTotal li:first-child .quickBetBtn button:hover, html body .center .right .betBlock .betContent .betData .betTotal li:first-child .quickBetBtn button:active, html body .center .right .betBlock .betContent .betData .betTotal li:first-child .quickBetBtn button.active {
   background: #b8151b;
+}
+html body .center .right .betBlock .betContent .betData .betTotal li:nth-of-type(3) .amount {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html body .center .right .betBlock .betContent .betData .betTotal li:nth-of-type(3) .amount.undisplay {
+  display: none;
+}
+html body .center .right .betBlock .betContent .betData .betTotal li:nth-of-type(3) .hint.undisplay {
+  display: none;
 }
 html body .center .right .betBlock .betContent .betData .betTotal li:last-child {
   padding: 10px 10px 20px;
@@ -3220,6 +3241,10 @@ html body .center .right .betBlock .betContent .betData .betTotal li .okBtn {
 }
 html body .center .right .betBlock .betContent .betData .betTotal li .okBtn:hover, html body .center .right .betBlock .betContent .betData .betTotal li .okBtn:active, html body .center .right .betBlock .betContent .betData .betTotal li .okBtn.active {
   background: #b8151b;
+}
+html body .center .right .betBlock .betContent .betData .betTotal li .okBtn.disabled {
+  background: #848484;
+  pointer-events: none;
 }
 html body .center .right .betBlock .closeRight {
   display: none;

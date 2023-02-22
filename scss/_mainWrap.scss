@@ -551,6 +551,11 @@
 
                             &:first-child { //2023-02-21 +
                                 flex-direction: column;
+
+                                &.undisplay {
+                                    display: none;
+                                }
+
                                 p {
                                     color: $mainColor_1;
                                     text-align: center;
@@ -572,6 +577,27 @@
                                     }
                                 }
                                
+                            }
+
+                            &:nth-of-type(3) { //2023-02-22 + & 修改結構
+
+                                .amount {
+                                    width: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+
+                                    &.undisplay {
+                                        display: none;
+                                    }
+                                }
+
+                                .hint {
+
+                                    &.undisplay {
+                                        display: none;
+                                    }
+                                }
                             }
 
                             &:last-child {  //2023-02-17 +
@@ -603,12 +629,17 @@
                             }
 
                             .okBtn {
-                                    width: auto;  //2023-02-17 +
-                                    height: auto;
-                                    @include btnStyle_1;
-                                    background: $subBG_3;
-                                    padding: 4px 15px 5px;
-                                    margin: 0 auto;
+                                width: auto;  //2023-02-17 +
+                                height: auto;
+                                @include btnStyle_1;
+                                background: $subBG_3;
+                                padding: 4px 15px 5px;
+                                margin: 0 auto;
+
+                                &.disabled {
+                                    background: $subColor_1;
+                                    pointer-events: none;
+                                }
                             }
                         }
                     }
