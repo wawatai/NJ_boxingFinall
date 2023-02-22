@@ -139,6 +139,7 @@ $(function(){
         .removeClass("active");
     })
 
+    //2023-02-22 新增快速下注功能
     $(".betDetail .bdContent .top i").click(function(){
         $(".right .betContent>div")
         .toggleClass("display");
@@ -148,6 +149,14 @@ $(function(){
 
         $(".mainArea .pkTeam .betBtnLine button")
         .removeClass("active");
+    })
+
+    
+    $(".right .betBlock .betContent .betData .betTotal li:first-child .quickBetBtn button").click(function(){
+        var value = $(this).text();
+
+        $(".right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .betamount input")
+        .val(value);
     })
 
     //2023-02-17 新增切換按鈕 不能點&&跳提示字
