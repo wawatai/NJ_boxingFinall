@@ -672,6 +672,7 @@ html body header .bottom .mid .time {
 }
 html body .innerBox {
   width: 100%;
+  min-height: 600px;
   height: auto;
 }
 html body .innerBox.userHome {
@@ -1037,6 +1038,9 @@ html body .innerBox.betPage .betBox table tr th {
 html body .innerBox.betPage .betBox table tr th:first-child {
   padding: 0 0 0 20px;
 }
+html body .innerBox.betPage .betBox table tr th:first-child p {
+  max-width: 90%;
+}
 html body .innerBox.betPage .betBox table tr th:last-child {
   padding: 0 20px 0 0;
 }
@@ -1075,6 +1079,9 @@ html body .innerBox.betPage .betBox table tr th p {
   font-size: 0.875rem;
   font-weight: bold;
   text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 html body .innerBox.betPage .betBox table tr td {
   width: 25%;
@@ -1241,6 +1248,7 @@ html body .innerBox.betPage .betBox .betData li.active .dataNum::before {
 }
 html body .innerBox.betPage .betBox .betData li.active table {
   display: table;
+  margin-top: 20px;
 }
 html body .innerBox.betPage .betBox .betData li .dataNum {
   width: 100%;
@@ -1514,7 +1522,7 @@ html body .innerBox.mailPage .messageBox li:first-child {
   margin-top: 20px;
 }
 html body .innerBox.mailPage .messageBox li:last-child {
-  margin: 0;
+  margin-bottom: 0;
 }
 html body .innerBox.mailPage .messageBox li i {
   width: 50px;

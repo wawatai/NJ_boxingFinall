@@ -1,6 +1,7 @@
 //2023-02-17 移除 .myPage ..mainArea
 .innerBox { 
     width: 100%;
+    min-height: 600px;
     height: auto;
 
     //個人頁主頁
@@ -359,6 +360,10 @@
 
                         &:first-child {
                             padding: 0 0 0 20px;
+
+                            p {
+                                max-width: 90%;
+                            }
                         }
 
                         &:last-child {
@@ -384,6 +389,7 @@
                             font-size: 0.875rem;
                             font-weight: bold;
                             text-align: left;
+                            @include textHide;
                         }
                     }
                 
@@ -539,6 +545,7 @@
 
                         table {
                             display: table;
+                            margin-top: 20px; //2023-02-23 +
                         }
                     }
 
@@ -758,8 +765,8 @@
                     margin-top: 20px;
                 }
 
-                &:last-child {
-                    margin: 0;
+                &:last-child { // 2023-02-23 修
+                    margin-bottom: 0;
                 }
 
                 i {

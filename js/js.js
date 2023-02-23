@@ -203,13 +203,13 @@ $(function(){
     })
 })
 
-//betPage
+//betPage //2023-02-23 移除展開收起功能
 $(function(){
-    $(".betPage table th").click(function(){
-        $(this)
-        .closest("table")
-        .toggleClass("active");
-    })
+    // $(".betPage table th").click(function(){
+    //     $(this)
+    //     .closest("table")
+    //     .toggleClass("active");
+    // })
 
     $(".betPage .history_bet .dataNum").click(function(){
         $(this).closest("li")
@@ -223,26 +223,37 @@ $(function(){
 
 })
 
-//myResult
+//myResult //2023-02-23 + ↓
 $(function(){
     var n = $("footer").prop("scrollHeight");
 
-    if ($(window).width() <= 820) //2023-02-22 增
+    if ($(window).width() <= 820)
     {
         $(".myResult")
         .css("bottom",""+ n +"px");
 
-        $(window).resize(function(){
+        
+    } else {
+        $(".myResult")
+        .css("bottom","unset");
+    }
+
+    $(window).resize(function(){
+        if ($(window).width() <= 820)
+        {
             var n = $("footer").prop("scrollHeight");
 
             $(".myResult")
             .css("bottom",""+ n +"px");
-        })
-    }
+        } else {
+            $(".myResult")
+            .css("bottom","unset");
+        }
+    })
 })
 
 //textHide 按了字會展開
-$(document).on("click","table p",function(){
+$(document).on("click","table p, th p",function(){
     var length = $(this).text().length;
 
     if ($(window).width() <= 500 && length > 3)
