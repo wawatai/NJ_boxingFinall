@@ -227,15 +227,18 @@ $(function(){
 $(function(){
     var n = $("footer").prop("scrollHeight");
 
-    $(".myResult")
-    .css("bottom",""+ n +"px");
-
-    $(window).resize(function(){
-        var n = $("footer").prop("scrollHeight");
-
+    if ($(window).width() <= 820) //2023-02-22 增
+    {
         $(".myResult")
         .css("bottom",""+ n +"px");
-    })
+
+        $(window).resize(function(){
+            var n = $("footer").prop("scrollHeight");
+
+            $(".myResult")
+            .css("bottom",""+ n +"px");
+        })
+    }
 })
 
 //textHide 按了字會展開
@@ -247,6 +250,37 @@ $(document).on("click","table p",function(){
         $(this)
         .toggleClass("active");
     }
+})
+
+//gameRule //2023-02-23 + ↓
+
+$(function(){
+    $(".tagBtn").click(function(){
+        var n = $(this).index();
+        var tar = $(".chapterBlock:eq("+ (n + 1) +")");
+
+        if ($(window).width() <= 500) 
+        {
+            $("html,body").animate({
+                scrollTop: $(tar).offset().top - 80,
+            },500);
+        }
+        else {
+            $("html,body").animate({
+                scrollTop: $(tar).offset().top - 150,
+            },500);
+        }
+    })
+})
+
+//toTop
+$(function(){
+    $(".goTop").click(function(){
+        var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body'); //各瀏覽器相容性
+        $body.delay('0').animate({
+            scrollTop: 0
+        },500)
+    })
 })
 
 //footer

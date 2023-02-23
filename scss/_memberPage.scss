@@ -606,8 +606,8 @@
             height: auto;
             display: flex;
             background: $mainBG_2;
-            border-top: 1px solid $mainBorder_1;
-            position: relative;
+            border: 1px solid $mainBorder_1; //2023-02-22 修
+            position: relative; //2023-02-22 修
     
             div {
                 width: 50%;
@@ -866,18 +866,117 @@
         }
     }
 
-    //遊戲規則
-    &.rulePage {
+    //一般球種規則  //2023-02-23 + ↓
+    &.ballrulePage {
         width: 100%;
+        min-height: 600px;
         height: auto;
 
-        .quickTag {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
+        .chapterBlock {
+            width: 100%;
+            height: auto;
 
-            button {
-                @include btnStyle_1;
-                border-radius: 5px;
+            .chapterTitle {
+                background: $mainBG_2;
+                color: $mainColor_2;
+                font-size: 1.2rem;
+                font-weight: bold;
+                padding: 5px 0;
+                margin: 30px 0;
+            }
+
+            .quickTag {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 5px;
+    
+                .tagBtn {
+                    width: 100%;
+                    height: 100%;
+                    @include btnStyle_1;
+                    border-radius: 5px;
+                    padding: 15px 40px;
+
+                    p {
+                        @include textHide;
+                    }
+                }
+            }
+
+            .ruleContent {
+                width: 100%;
+                height: auto;
+
+                p {
+                    color: $mainColor_2;
+                    font-size: 1rem;
+                    line-height: 25px;
+                    pointer-events: none;
+
+                    &.emphasis {
+                        margin: 20px 0;
+                    }
+                }
+
+                ul {
+                    width: 100%;
+                    height: auto;
+                    padding: 0 20px;
+                    margin: 20px 0 0;
+
+                    &.small {
+                        margin: 20px 0;
+
+                        li {
+                            margin-bottom: 0;
+                        }
+                    }
+
+                    li {
+                        width: 100%;
+                        height: auto;
+                        list-style-type: disc;
+                        margin-bottom: 20px;
+                       
+                        &::marker {
+                            color: $mainColor_2;
+                        }
+                    }
+                }
+                
+                .toTop {
+                    width: auto;
+                    height: auto;
+                    display: flex;
+                    justify-content: flex-end;
+                    
+
+                    .goTop {
+                        cursor: pointer;
+
+                        &:hover,&:active,&.active {
+
+                            i {
+                                color: $mainColor_2;
+                            }
+
+                            span {
+                                color: $mainColor_2;
+                            }
+                        }
+                        
+                        i {
+                            color: $mainColor_1;
+                            font-size: 1rem;
+                            margin-right: 10px;
+                        }
+    
+                        span {
+                            color: $mainColor_1;
+                            font-size: 1rem;
+                        }
+                    }
+                }
             }
         }
     }

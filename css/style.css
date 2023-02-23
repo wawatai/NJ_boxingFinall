@@ -1316,7 +1316,7 @@ html body .innerBox.betPage .myResult {
   display: -ms-flexbox;
   display: flex;
   background: #202020;
-  border-top: 1px solid #cf0505;
+  border: 1px solid #cf0505;
   position: relative;
 }
 html body .innerBox.betPage .myResult div {
@@ -1616,17 +1616,33 @@ html body .innerBox.mailPage .messageCnt .date button:before {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
-html body .innerBox.rulePage {
+html body .innerBox.ballrulePage {
+  width: 100%;
+  min-height: 600px;
+  height: auto;
+}
+html body .innerBox.ballrulePage .chapterBlock {
   width: 100%;
   height: auto;
 }
-html body .innerBox.rulePage .quickTag {
+html body .innerBox.ballrulePage .chapterBlock .chapterTitle {
+  background: #202020;
+  color: #dd2830;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 5px 0;
+  margin: 30px 0;
+}
+html body .innerBox.ballrulePage .chapterBlock .quickTag {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
+  -ms-grid-columns: 1fr 5px 1fr 5px 1fr 5px 1fr;
   grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
 }
-html body .innerBox.rulePage .quickTag button {
+html body .innerBox.ballrulePage .chapterBlock .quickTag .tagBtn {
+  width: 100%;
+  height: 100%;
   background: #dd2830;
   border-radius: 50px;
   border: none;
@@ -1644,9 +1660,77 @@ html body .innerBox.rulePage .quickTag button {
           justify-content: center;
   cursor: pointer;
   border-radius: 5px;
+  padding: 15px 40px;
 }
-html body .innerBox.rulePage .quickTag button:hover, html body .innerBox.rulePage .quickTag button:active, html body .innerBox.rulePage .quickTag button.active {
+html body .innerBox.ballrulePage .chapterBlock .quickTag .tagBtn:hover, html body .innerBox.ballrulePage .chapterBlock .quickTag .tagBtn:active, html body .innerBox.ballrulePage .chapterBlock .quickTag .tagBtn.active {
   background: #b8151b;
+}
+html body .innerBox.ballrulePage .chapterBlock .quickTag .tagBtn p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+html body .innerBox.ballrulePage .chapterBlock .ruleContent {
+  width: 100%;
+  height: auto;
+}
+html body .innerBox.ballrulePage .chapterBlock .ruleContent p {
+  color: #dd2830;
+  font-size: 1rem;
+  line-height: 25px;
+  pointer-events: none;
+}
+html body .innerBox.ballrulePage .chapterBlock .ruleContent p.emphasis {
+  margin: 20px 0;
+}
+html body .innerBox.ballrulePage .chapterBlock .ruleContent ul {
+  width: 100%;
+  height: auto;
+  padding: 0 20px;
+  margin: 20px 0 0;
+}
+html body .innerBox.ballrulePage .chapterBlock .ruleContent ul.small {
+  margin: 20px 0;
+}
+html body .innerBox.ballrulePage .chapterBlock .ruleContent ul.small li {
+  margin-bottom: 0;
+}
+html body .innerBox.ballrulePage .chapterBlock .ruleContent ul li {
+  width: 100%;
+  height: auto;
+  list-style-type: disc;
+  margin-bottom: 20px;
+}
+html body .innerBox.ballrulePage .chapterBlock .ruleContent ul li::marker {
+  color: #dd2830;
+}
+html body .innerBox.ballrulePage .chapterBlock .ruleContent .toTop {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+html body .innerBox.ballrulePage .chapterBlock .ruleContent .toTop .goTop {
+  cursor: pointer;
+}
+html body .innerBox.ballrulePage .chapterBlock .ruleContent .toTop .goTop:hover i, html body .innerBox.ballrulePage .chapterBlock .ruleContent .toTop .goTop:active i, html body .innerBox.ballrulePage .chapterBlock .ruleContent .toTop .goTop.active i {
+  color: #dd2830;
+}
+html body .innerBox.ballrulePage .chapterBlock .ruleContent .toTop .goTop:hover span, html body .innerBox.ballrulePage .chapterBlock .ruleContent .toTop .goTop:active span, html body .innerBox.ballrulePage .chapterBlock .ruleContent .toTop .goTop.active span {
+  color: #dd2830;
+}
+html body .innerBox.ballrulePage .chapterBlock .ruleContent .toTop .goTop i {
+  color: #ffffff;
+  font-size: 1rem;
+  margin-right: 10px;
+}
+html body .innerBox.ballrulePage .chapterBlock .ruleContent .toTop .goTop span {
+  color: #ffffff;
+  font-size: 1rem;
 }
 html body .innerBox .topLine {
   width: 100%;
@@ -3811,6 +3895,7 @@ html body footer .mobileFooter li:active a p, html body footer .mobileFooter li.
   }
   html body main .center .mainArea .innerBox.betPage .myResult {
     width: 100%;
+    border-width: 1px 0 0 0;
     position: fixed;
     left: 0;
   }
@@ -3849,6 +3934,15 @@ html body footer .mobileFooter li:active a p, html body footer .mobileFooter li.
   }
   html body main .center .mainArea .innerBox.mailPage.inner .messageCnt .date button {
     display: none;
+  }
+  html body main .center .mainArea .innerBox.ballrulePage .chapterBlock .quickTag {
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  }
+  html body main .center .mainArea .innerBox.ballrulePage .chapterBlock .quickTag button {
+    padding: 2vw;
+  }
+  html body main .center .mainArea .innerBox.ballrulePage .chapterBlock .quickTag button p {
+    font-size: 0.9rem;
   }
   html body main .center .mainArea .innerBox .topLine {
     padding: 4vw 0;

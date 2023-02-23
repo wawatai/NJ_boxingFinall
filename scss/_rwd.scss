@@ -441,8 +441,10 @@
                                     }
                                 }
 
+                                //2023-02-22 增 ↓
                                 .myResult {
                                     width: 100%;
+                                    border-width: 1px 0 0 0;  
                                     position: fixed;
                                     left: 0;
 
@@ -520,6 +522,26 @@
                                             button {
                                                 display: none;
                                             }
+                                        }
+                                    }
+                                }
+                            }
+
+                            //2023-02-23 + ↓
+                            &.ballrulePage {
+
+                                .chapterBlock {
+
+                                    .quickTag {
+                                        grid-template-columns: repeat(auto-fit, minmax(130px,1fr));
+
+                                        button {
+                                            padding: 2vw;
+
+                                            p {
+                                                font-size: 0.9rem;
+                                            }
+                                            
                                         }
                                     }
                                 }
