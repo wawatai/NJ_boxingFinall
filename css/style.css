@@ -4248,9 +4248,6 @@ html body main .center .leftSide {
   html body main .center .mainArea .innerBox.betPage .betBox table {
     margin-bottom: 4vw;
   }
-  html body main .center .mainArea .innerBox.betPage .betBox table tr:nth-of-type(5) td:last-child p {
-    font-size: 0.6975rem;
-  }
   html body main .center .mainArea .innerBox.betPage .betBox table tr th {
     height: 10vw;
   }
@@ -4272,6 +4269,9 @@ html body main .center .leftSide {
   html body main .center .mainArea .innerBox.betPage .betBox table tr td {
     height: 10vw;
     padding: 0 2vw;
+  }
+  html body main .center .mainArea .innerBox.betPage .betBox table tr td:nth-of-type(1) {
+    width: 25%;
   }
   html body main .center .mainArea .innerBox.betPage .betBox table tr td div.teamBox {
     padding: 2vw 0;

@@ -1016,18 +1016,18 @@
 
                                         tr {
 
-                                            &:nth-of-type(5) { //2023-02-24 + 倍率的字調小
+                                            // &:nth-of-type(5) { //2023-02-24 + 倍率的字調小
 
-                                                td {
+                                            //     td {
 
-                                                    &:last-child {
+                                            //         &:last-child {
 
-                                                        p {
-                                                            font-size: 0.6975rem;
-                                                        }
-                                                    }
-                                                }
-                                            }
+                                            //             p {
+                                            //                 font-size: 0.6975rem;
+                                            //             }
+                                            //         }
+                                            //     }
+                                            // }
 
                                             th {
                                                 height: 10vw;
@@ -1056,6 +1056,10 @@
                                             td {
                                                 height: 10vw;
                                                 padding: 0 2vw;
+
+                                                &:nth-of-type(1) {
+                                                    width: 25%; //2023-02-24 改
+                                                }
 
                                                 div {
 

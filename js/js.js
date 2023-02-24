@@ -252,25 +252,16 @@ $(function(){
     })
 })
 
-//textHide 按了字會展開
-$(document).on("click","table tr th p",function(){
-    var length = $(this).text().length;
+//textHide 按了字會展開 //2023-02-24 移除此功能
+// $(document).on("click","table p, th p",function(){
+//     var length = $(this).text().length;
 
-    if ($(window).width() <= 500 && length > 3)
-    {
-        $(this)
-        .toggleClass("active");
-    }
-})
-$(document).on("click","table p, th p",function(){
-    var length = $(this).text().length;
-
-    if ($(window).width() <= 500 && length > 3)
-    {
-        $(this)
-        .toggleClass("active");
-    }
-})
+//     if ($(window).width() <= 500 && length > 3)
+//     {
+//         $(this)
+//         .toggleClass("active");
+//     }
+// })
 
 //gameRule //2023-02-23 + ↓
 
