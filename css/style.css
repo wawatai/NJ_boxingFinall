@@ -932,7 +932,6 @@ html body .innerBox.betPage .resultBox table tr th {
   background: #b8151b;
   vertical-align: middle;
   position: relative;
-  cursor: pointer;
 }
 html body .innerBox.betPage .resultBox table tr th p {
   color: #ffffff;
@@ -1033,12 +1032,14 @@ html body .innerBox.betPage .betBox table tr th {
   height: 40px;
   background: #b8151b;
   vertical-align: middle;
-  cursor: pointer;
 }
 html body .innerBox.betPage .betBox table tr th:first-child {
   padding: 0 0 0 20px;
 }
-html body .innerBox.betPage .betBox table tr th:first-child p {
+html body .innerBox.betPage .betBox table tr th:first-child div {
+  position: relative;
+}
+html body .innerBox.betPage .betBox table tr th:first-child div p {
   max-width: 90%;
 }
 html body .innerBox.betPage .betBox table tr th:last-child {
@@ -1082,6 +1083,18 @@ html body .innerBox.betPage .betBox table tr th p {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+html body .innerBox.betPage .betBox table tr th p.active {
+  width: 100%;
+  height: auto;
+  background: #000000;
+  padding: 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 50;
 }
 html body .innerBox.betPage .betBox table tr td {
   width: 25%;
@@ -4235,11 +4248,17 @@ html body main .center .leftSide {
   html body main .center .mainArea .innerBox.betPage .betBox table {
     margin-bottom: 4vw;
   }
+  html body main .center .mainArea .innerBox.betPage .betBox table tr:nth-of-type(5) td:last-child p {
+    font-size: 0.6975rem;
+  }
   html body main .center .mainArea .innerBox.betPage .betBox table tr th {
     height: 10vw;
   }
   html body main .center .mainArea .innerBox.betPage .betBox table tr th:first-child {
     padding-left: 5vw;
+  }
+  html body main .center .mainArea .innerBox.betPage .betBox table tr th:first-child p {
+    max-width: 72%;
   }
   html body main .center .mainArea .innerBox.betPage .betBox table tr th:last-child {
     padding-right: 5vw;

@@ -1016,11 +1016,28 @@
 
                                         tr {
 
+                                            &:nth-of-type(5) { //2023-02-24 + 倍率的字調小
+
+                                                td {
+
+                                                    &:last-child {
+
+                                                        p {
+                                                            font-size: 0.6975rem;
+                                                        }
+                                                    }
+                                                }
+                                            }
+
                                             th {
                                                 height: 10vw;
 
                                                 &:first-child {
                                                     padding-left: 5vw;
+
+                                                    p {
+                                                        max-width: 72%;
+                                                    }
                                                 }
 
                                                 &:last-child {

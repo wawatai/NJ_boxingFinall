@@ -238,7 +238,6 @@
                         background: $mainBG_1;
                         vertical-align: middle;
                         position: relative;
-                        cursor: pointer;
                         
                         p {
                             color: $mainColor_1;
@@ -340,7 +339,7 @@
                 }
 
                 tr {
-                    
+                   
                     &:not(:first-child) {
                         display: none;
                     }
@@ -356,13 +355,16 @@
                         height: 40px;
                         background: $mainBG_1;
                         vertical-align: middle;
-                        cursor: pointer;
 
                         &:first-child {
                             padding: 0 0 0 20px;
 
-                            p {
-                                max-width: 90%;
+                            div {
+                                position: relative;
+
+                                p {
+                                    max-width: 90%;
+                                }
                             }
                         }
 
@@ -390,6 +392,18 @@
                             font-weight: bold;
                             text-align: left;
                             @include textHide;
+
+                            &.active {
+                                width: 100%;
+                                height: auto;
+                                background: $BG;
+                                padding: 5px;
+                                position: absolute;
+                                top: 50%;
+                                left: 0;
+                                transform: translateY(-50%);
+                                z-index: 50;
+                            }
                         }
                     }
                 
