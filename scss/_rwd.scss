@@ -1057,8 +1057,16 @@
                                                 height: 10vw;
                                                 padding: 0 2vw;
 
-                                                &:nth-of-type(1) {
-                                                    width: 25%; //2023-02-24 改
+                                                &:nth-of-type(1) { //2023-02-24 +
+                                                    width: 30%; 
+                                                }
+
+                                                &:nth-of-type(3) { //2023-02-24 +
+                                                    width: 30%;
+                                                }
+
+                                                &:nth-of-type(4) { //2023-02-24 +
+                                                    width: 20%; 
                                                 }
 
                                                 div {

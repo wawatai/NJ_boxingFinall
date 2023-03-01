@@ -1187,8 +1187,6 @@ html body .innerBox.betPage .betBox table tr td div .cancelBtn:hover, html body 
 html body .innerBox.betPage .betBox table tr td p {
   color: #dd2830;
   font-size: 1rem;
-  overflow: hidden;
-  text-overflow: ellipsis;
   white-space: nowrap;
 }
 html body .innerBox.betPage .betBox table tr td p.active {
@@ -1990,11 +1988,13 @@ html body .filter .jumpWindow.cancelBet .content .closeWindow:hover, html body .
   background: #b8151b;
 }
 html body .filter .jumpWindow.chooseball .content {
+  max-height: 60vh;
   display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 10px;
   padding: 20px;
+  overflow-y: auto;
 }
 html body .filter .jumpWindow.chooseball .content button {
   width: auto;
@@ -4271,7 +4271,13 @@ html body main .center .leftSide {
     padding: 0 2vw;
   }
   html body main .center .mainArea .innerBox.betPage .betBox table tr td:nth-of-type(1) {
-    width: 25%;
+    width: 30%;
+  }
+  html body main .center .mainArea .innerBox.betPage .betBox table tr td:nth-of-type(3) {
+    width: 30%;
+  }
+  html body main .center .mainArea .innerBox.betPage .betBox table tr td:nth-of-type(4) {
+    width: 20%;
   }
   html body main .center .mainArea .innerBox.betPage .betBox table tr td div.teamBox {
     padding: 2vw 0;

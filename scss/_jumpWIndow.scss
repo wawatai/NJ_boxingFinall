@@ -187,10 +187,12 @@
         &.chooseball {
 
             .content {
+                max-height: 60vh; //2023-03-01+
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
                 gap: 10px;
                 padding: 20px;
+                overflow-y: auto;  //2023-03-01+
 
                 button {
                     width: auto;

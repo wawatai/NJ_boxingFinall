@@ -489,7 +489,8 @@
                         p {
                             color: $mainColor_2;
                             font-size: 1rem;
-                            @include textHide;
+                            white-space: nowrap; //2023-02-24 改
+
                             
                             &.active {
                                 width: auto;
