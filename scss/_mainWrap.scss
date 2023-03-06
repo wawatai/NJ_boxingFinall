@@ -66,6 +66,7 @@
                         color: $mainColor_1;
                         font-size: 1rem;
                         font-weight: bold;
+                        @include textHide; //2023/03/06 +
                     }
                 }
             }
@@ -117,6 +118,7 @@
                         color: $mainColor_1;
                         font-size: 1rem;
                         font-weight: bold;
+                        @include textHide; //2023/03/06 +
                     }
 
                     i {

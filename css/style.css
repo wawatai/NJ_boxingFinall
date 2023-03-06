@@ -2209,6 +2209,9 @@ html body .center .left ul li a p {
   color: #ffffff;
   font-size: 1rem;
   font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 html body .center .leftSide {
   width: 250px;
@@ -2261,6 +2264,9 @@ html body .center .leftSide ul li a p {
   color: #ffffff;
   font-size: 1rem;
   font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 html body .center .leftSide ul li a i {
   color: #ffffff;
